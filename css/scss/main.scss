@@ -536,53 +536,57 @@ footer {
     }
 }
 
-
-
-
-
-
-
-
-
-
-
-
 /* Service */
-.service-item {
-    position: relative;
-    height: 300px;
-    padding: 0 30px;
-    transition: bottom .5s, opacity .5s; // Specify properties to transition
+.service {
+    .card {
+        border: none;
+        position: relative;
+        overflow: hidden;
 
-    .service-icon {
-        margin-bottom: 30px;
-        width: 60px;
-        height: 60px;
-        display: flex;
-        align-items: center;
-        justify-content: center;
-        background: $theme;
-        border-radius: 2px;
-        transform: rotate(-45deg);
-
-        .text-white {
-            transform: rotate(45deg);
+        .card-img {
+            transition: transform 0.4s ease-in-out;
         }
-    }
 
-    a.btn {
-        position: absolute;
-        width: 60px;
-        bottom: -48px;
-        left: 50%;
-        margin-left: -30px;
-        opacity: 0;
-        transition: bottom .5s, opacity .5s; // Ensure button transition matches
-    }
+        &:hover .card-img {
+            transform: scale(1.1);
+        }
 
-    &:hover a.btn {
-        bottom: -24px;
-        opacity: 1;
+        .card-overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.5);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            transition: opacity 0.4s ease-in-out;
+        }
+
+        .card-hover-overlay {
+            position: absolute;
+            top: 0;
+            left: -100%;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, 0.8);
+            transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            opacity: 0;
+        }
+
+        &:hover .card-overlay {
+            opacity: 0;
+        }
+
+        &:hover .card-hover-overlay {
+            left: 0;
+            opacity: 1;
+        }
     }
 }
 

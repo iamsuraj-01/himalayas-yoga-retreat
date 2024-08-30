@@ -470,37 +470,48 @@ footer .link-animated a:hover {
 }
 
 /* Service */
-.service-item {
+.service .card {
+  border: none;
   position: relative;
-  height: 300px;
-  padding: 0 30px;
-  transition: bottom 0.5s, opacity 0.5s;
+  overflow: hidden;
 }
-.service-item .service-icon {
-  margin-bottom: 30px;
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  background: #4CAF50;
-  border-radius: 2px;
-  transform: rotate(-45deg);
+.service .card .card-img {
+  transition: transform 0.4s ease-in-out;
 }
-.service-item .service-icon .text-white {
-  transform: rotate(45deg);
+.service .card:hover .card-img {
+  transform: scale(1.1);
 }
-.service-item a.btn {
+.service .card .card-overlay {
   position: absolute;
-  width: 60px;
-  bottom: -48px;
-  left: 50%;
-  margin-left: -30px;
-  opacity: 0;
-  transition: bottom 0.5s, opacity 0.5s;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: opacity 0.4s ease-in-out;
 }
-.service-item:hover a.btn {
-  bottom: -24px;
+.service .card .card-hover-overlay {
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  opacity: 0;
+}
+.service .card:hover .card-overlay {
+  opacity: 0;
+}
+.service .card:hover .card-hover-overlay {
+  left: 0;
   opacity: 1;
 }
 
