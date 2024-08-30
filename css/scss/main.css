@@ -353,12 +353,15 @@ footer .link-animated a:hover {
 .carousel .carousel-inner .carousel-item .carousel-caption p {
   font-size: 1.25rem;
 }
+.carousel .carousel-control-prev,
+.carousel .carousel-control-next {
+  z-index: auto;
+}
 .carousel .carousel-control-prev .carousel-control-prev-icon,
 .carousel .carousel-control-prev .carousel-control-next-icon,
 .carousel .carousel-control-next .carousel-control-prev-icon,
 .carousel .carousel-control-next .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.5);
-  display: none;
 }
 
 /* Banner */
