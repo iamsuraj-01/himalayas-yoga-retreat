@@ -19,7 +19,7 @@ body {
 }
 
 .bg-secondary-theme {
-  background: #047CA7;
+  background: #336954;
 }
 
 /* Text Colors */
@@ -28,7 +28,7 @@ body {
 }
 
 .text-secondary-theme {
-  color: #047CA7;
+  color: #336954;
 }
 
 /* Text Alignment */
@@ -110,8 +110,8 @@ a {
 }
 .btn-theme:hover {
   color: #FFFFFF;
-  background-color: #047CA7;
-  border-color: #047CA7;
+  background-color: #336954;
+  border-color: #336954;
 }
 
 .btn-square, .btn-sm-square, .btn-lg-square {
@@ -287,7 +287,7 @@ a {
   transition: 0.5s;
 }
 .navbar .dropdown-menu .dropdown-item:hover {
-  background-color: #047CA7;
+  background-color: #336954;
   color: #FFFFFF;
 }
 .navbar .dropdown-menu .dropdown-item.active, .navbar .dropdown-menu .dropdown-item:active {
