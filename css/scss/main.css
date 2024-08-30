@@ -139,6 +139,10 @@ a {
   border-radius: 30px 0 30px 0;
 }
 
+.theme-design-high {
+  border-radius: 90px 0 90px 0;
+}
+
 /* Whatsapp Button */
 .whatsapp-popup {
   position: fixed;
@@ -300,14 +304,11 @@ a {
 }
 
 /* Footer */
-footer .navbar-brand img {
-  width: 100px;
+footer img {
+  width: 80px;
   height: auto;
   max-width: 100%;
   pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
-}
-footer .footer-contact .form-control {
-  width: 50%;
 }
 footer .link-animated a {
   transition: 0.5s;
@@ -519,26 +520,19 @@ footer .link-animated a:hover {
 /* Team */
 .team-item {
   transition: 0.5s;
+  padding: 30px;
 }
-.team-item .team-social {
-  position: absolute;
-  width: 100%;
-  height: 100%;
-  top: 0;
-  left: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  transition: 0.5s;
-}
-.team-item .team-social a.btn {
+.team-item .team-img {
   position: relative;
-  margin: 0 3px;
-  margin-top: 100px;
-  opacity: 0;
+  width: 150px; /* Adjust size as needed */
+  height: 150px; /* Adjust size as needed */
+  margin: 0 auto;
+  overflow: hidden;
+  border-radius: 50%; /* Makes the image circular */
+  box-shadow: 0 0 30px #4CAF50;
 }
 .team-item:hover {
-  box-shadow: 0 0 30px #DDDDDD;
+  box-shadow: 0 0 30px #4CAF50;
 }
 .team-item:hover .team-social {
   background: rgba(9, 30, 62, 0.7);
@@ -587,8 +581,14 @@ footer .link-animated a:hover {
   transition: 0.5s;
 }
 .testimonial-carousel .owl-item.center .testimonial-item {
-  background: #FFFFFF !important;
+  background: #4CAF50 !important;
   box-shadow: 0 0 30px #DDDDDD;
+  color: #FFFFFF;
+}
+.testimonial-carousel .owl-item.center .testimonial-item h4,
+.testimonial-carousel .owl-item.center .testimonial-item small,
+.testimonial-carousel .owl-item.center .testimonial-item p {
+  color: #FFFFFF;
 }
 
 /* Media Queries */
