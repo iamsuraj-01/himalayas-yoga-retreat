@@ -10,7 +10,7 @@
 
 /* Variables */
 $theme: #06A3DA; // theme color
-$theme-secondary: #0b5ed7; // Secondary theme color
+$theme-secondary: #047CA7; // Secondary theme color
 $white: #FFFFFF; // White color
 $dark: #212529; // Dark color
 
@@ -304,7 +304,7 @@ a {
         border-radius: 0;
 
         .dropdown-item {
-            background-color: $theme-secondary;
+            background-color: $theme;
             color: $white;
             border-bottom: 1px solid $white;
             text-align: center;
@@ -312,7 +312,7 @@ a {
             transition: 0.5s;
 
             &:hover {
-                background-color: $theme; // Set background color to theme color on hover
+                background-color: $theme-secondary; // Set background color to theme color on hover
                 color: $white; // Change text color for better readability on the background color
             }
         
