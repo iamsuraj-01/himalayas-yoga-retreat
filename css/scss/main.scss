@@ -530,11 +530,12 @@ footer {
     }
 
     .center-image {
-        max-width: 100%;  // Adjust as needed
-        height: auto;
+        width: 400px; /* Set a fixed width */
+        height: 400px; /* Set the same height as width */
         margin: 0 auto;
-        border-radius: 200px;
-    }
+        border-radius: 50%; /* Makes the image a circle */
+        object-fit: cover; /* Ensures the image covers the container evenly */
+    }    
 }
 
 /* Service */
