@@ -9,8 +9,8 @@
 }
 
 /* Variables */
-$theme: #448c74; // theme color
-$theme-secondary: #336954; // Secondary theme color
+$theme: #39B9E3; // theme color
+$theme-secondary: #047598; // Secondary theme color
 $white: #FFFFFF; // White color
 $dark: #212529; // Dark color
 
@@ -266,7 +266,7 @@ a {
 /* Navbar */
 .navbar {
     .navbar-brand img {
-        width: 150px;
+        width: 120px;
         height: auto;
         max-width: 100%;
         pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
