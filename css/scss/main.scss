@@ -9,8 +9,8 @@
 }
 
 /* Variables */
-$theme: #39B9E3; // theme color
-$theme-secondary: #047598; // Secondary theme color
+$theme: #3391e6; // theme color
+$theme-secondary: #0056a8; // Secondary theme color
 $white: #FFFFFF; // White color
 $dark: #212529; // Dark color
 
@@ -266,7 +266,7 @@ a {
 /* Navbar */
 .navbar {
     .navbar-brand img {
-        width: 120px;
+        width: 100px;
         height: auto;
         max-width: 100%;
         pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
@@ -278,7 +278,7 @@ a {
             margin-left: 25px;
             padding: 35px 0;
             text-transform: uppercase;
-            color: $white;
+            color: $theme;
             font-size: 18px;
             font-weight: 600;
             outline: none;
@@ -286,7 +286,7 @@ a {
 
             &:hover,
             &.active {
-                color: $theme;
+                color: $theme-secondary;
             }
         }
         .show > .nav-link {
@@ -383,7 +383,7 @@ footer {
 
             .carousel-caption {
                 position: absolute;
-                top: 55%;
+                top: 50%;
                 left: 30%;
                 transform: translate(-50%, -50%);
                 text-align: left;
@@ -795,9 +795,11 @@ footer {
     /* Navbar */
     .sticky-top.navbar {
         position: fixed;
+        width: 100%;
         background: #FFFFFF;
     }
 
+    /* Navbar Transparent
     .navbar {
         position: absolute;
         width: 100%;
@@ -805,6 +807,7 @@ footer {
         left: 0;
         z-index: 999;
     }
+    */
 
    /* Gallery */
     .gallery {
