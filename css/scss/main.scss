@@ -430,46 +430,39 @@ footer {
 
     .about-image-wrapper {
         position: relative;
-        flex: 1;
-        max-width: 80%;
         display: flex;
         justify-content: center;
         align-items: center;
-    }
+        max-width: 80%; // Ensure a reasonable width for the image
 
-    .background-shape {
-        width: 100%;  // Ensure the shape covers the area behind the image
-        height: 100%;  // Make the shape as large as the image container
-        background-color: $theme;  // Adjust the color as needed
-        border-radius: 150px 0 150px 0;  // Shape provided
-        position: absolute;
-        top: 20px;  // Slightly offset to show behind the image
-        left: 30px;  // Slightly offset to show behind the image
-        z-index: 1;  // Ensure it stays behind the image
-    }
-
-    .about-image {
-        z-index: 2;  // Make sure the image stays on top
-        border-radius: 150px 0 150px 0;  // Ensure the image has the same shape
-        overflow: hidden;
-
-        img {
+        .background-shape {
+            width: 100%;  // Cover the entire image container
+            height: 100%;
+            background-color: $theme;  // Use your theme color variable
             border-radius: 150px 0 150px 0;
-            width: 100%;
-            height: auto;
-            object-fit: cover;
+            position: absolute;
+            top: 20px;  // Slight offset for the shape to show
+            left: 30px; 
+            z-index: 1;  // Ensure the shape is behind the image
+        }
+
+        .about-image {
+            z-index: 2;  // Image on top of the shape
+            border-radius: 150px 0 150px 0;
+            overflow: hidden;
+
+            img {
+                border-radius: 150px 0 150px 0;
+                width: 100%;
+                height: auto;
+                object-fit: cover;
+            }
         }
     }
 
     .about-content {
         flex: 1;
         padding-left: 40px;
-
-        h6 {
-            font-size: 1rem;
-            font-weight: 700;
-            color: $theme;
-        }
 
         h2 {
             font-size: 2.5rem;
@@ -489,6 +482,7 @@ footer {
         }
     }
 }
+
 
 /* Features */
 .features {
@@ -829,6 +823,12 @@ footer {
                 }
             }
         }
+    }
+
+    .about-image-wrapper {
+        max-width: 100%; // Full width on smaller screens
+        margin-bottom: 20px; // Add margin-bottom for spacing
+        margin: 0 auto;
     }
 }
 

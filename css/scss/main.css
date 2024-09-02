@@ -380,13 +380,12 @@ footer .link-animated a:hover {
 }
 .about-section .about-image-wrapper {
   position: relative;
-  flex: 1;
-  max-width: 80%;
   display: flex;
   justify-content: center;
   align-items: center;
+  max-width: 80%;
 }
-.about-section .background-shape {
+.about-section .about-image-wrapper .background-shape {
   width: 100%;
   height: 100%;
   background-color: #3391e6;
@@ -396,12 +395,12 @@ footer .link-animated a:hover {
   left: 30px;
   z-index: 1;
 }
-.about-section .about-image {
+.about-section .about-image-wrapper .about-image {
   z-index: 2;
   border-radius: 150px 0 150px 0;
   overflow: hidden;
 }
-.about-section .about-image img {
+.about-section .about-image-wrapper .about-image img {
   border-radius: 150px 0 150px 0;
   width: 100%;
   height: auto;
@@ -411,11 +410,6 @@ footer .link-animated a:hover {
 .about-section .about-content {
   flex: 1;
   padding-left: 40px;
-}
-.about-section .about-content h6 {
-  font-size: 1rem;
-  font-weight: 700;
-  color: #3391e6;
 }
 .about-section .about-content h2 {
   font-size: 2.5rem;
@@ -708,6 +702,11 @@ footer .link-animated a:hover {
   .navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link.show {
     padding: 10px 0;
     color: #212529;
+  }
+  .about-image-wrapper {
+    max-width: 100%;
+    margin-bottom: 20px;
+    margin: 0 auto;
   }
 }
 @media (min-width: 992px) {
