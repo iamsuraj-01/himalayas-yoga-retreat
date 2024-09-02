@@ -536,7 +536,7 @@ footer {
         margin: 0 auto;
         border-radius: 50%; /* Makes the image a circle */
         object-fit: cover; /* Ensures the image covers the container evenly */
-    }    
+    }
 }
 
 /* Plan */
@@ -775,6 +775,9 @@ footer {
             margin-left: 0px!important;
             margin-right: 0px!important;
         }
+        .center-image {
+            height: 330px; /* Set the same height as width */
+        }
     }
 }
 
@@ -843,13 +846,6 @@ footer {
         .box {
             margin: -15px;
         }
-    }
-
-    /* Facts Counter */
-    .facts {
-        position: relative;
-        margin-top: -75px;
-        z-index: 1;
     }
 }
 
