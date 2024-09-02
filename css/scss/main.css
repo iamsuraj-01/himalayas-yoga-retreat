@@ -376,7 +376,7 @@ footer .link-animated a:hover {
 .about-section {
   display: flex;
   align-items: center;
-  padding: 60px 0;
+  padding: 50px 0;
 }
 .about-section .about-image-wrapper {
   position: relative;
@@ -519,6 +519,7 @@ footer .link-animated a:hover {
   transition-delay: 0.15s;
 }
 
+/* Testimonial */
 .testimonial-carousel {
   position: relative;
 }
