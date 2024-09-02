@@ -140,7 +140,7 @@ a {
 }
 
 .theme-design-high {
-  border-radius: 90px 0 90px 0;
+  border-radius: 70px 0 70px 0;
 }
 
 /* Whatsapp Button */
@@ -518,6 +518,11 @@ footer .link-animated a:hover {
   opacity: 1;
 }
 
+/* Plan */
+.rounded-top {
+  border-radius: 70px 0 0 0 !important;
+}
+
 /* Gallery */
 .gallery .box {
   width: 350px;
@@ -642,7 +647,7 @@ footer .link-animated a:hover {
   margin-right: 10px;
 }
 .custom-side-nav .nav-list li a:hover {
-  color: #0056a8;
+  padding-left: 10px;
 }
 
 .intro {

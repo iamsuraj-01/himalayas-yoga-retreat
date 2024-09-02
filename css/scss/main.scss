@@ -137,7 +137,7 @@ a {
     border-radius: 20px 0 20px 0; // Curved top-right and bottom-right corners
 }
 .theme-design-high {
-    border-radius: 90px 0 90px 0; // Curved top-right and bottom-right corners
+    border-radius: 70px 0 70px 0; // Curved top-right and bottom-right corners
 }
 
 /* Whatsapp Button */
@@ -592,6 +592,11 @@ footer {
     }
 }
 
+/* Plan */
+.rounded-top {
+    border-radius: 70px 0 0 0!important;
+}
+
 /* Gallery */
 .gallery {
     .box {
@@ -737,7 +742,7 @@ footer {
                 }
 
                 &:hover {
-                    color: $theme-secondary; // Use theme hover color
+                    padding-left: 10px;// Use theme hover color
                 }
             }
         }
