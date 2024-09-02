@@ -675,6 +675,11 @@ footer .link-animated a:hover {
   .features .center-image {
     height: 330px; /* Set the same height as width */
   }
+  .testimonial-carousel .testimonial-item {
+    max-width: 350px;
+    position: absolute; /* Position the item absolutely within its parent */
+    left: 0%; /* Adjust the right positioning */
+  }
 }
 /* Tablets/Ipads Only */
 @media (max-width: 768px) {

@@ -602,6 +602,7 @@ footer {
 
 .testimonial-carousel {
     position: relative;
+
     .owl-stage-outer {
         overflow: hidden; // Ensures only one item is visible at a time
     }
@@ -777,6 +778,14 @@ footer {
         }
         .center-image {
             height: 330px; /* Set the same height as width */
+        }
+    }
+
+    .testimonial-carousel {
+        .testimonial-item {
+            max-width: 350px; // Limit the width of each testimonial
+            position: absolute; /* Position the item absolutely within its parent */
+            left: 0%; /* Adjust the right positioning */
         }
     }
 }
