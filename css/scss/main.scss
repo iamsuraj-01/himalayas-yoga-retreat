@@ -134,7 +134,7 @@ a {
     height: 48px;
 }
 .theme-design {
-    border-radius: 10px 0 10px 0; // Curved top-right and bottom-right corners
+    border-radius: 20px 0 20px 0; // Curved top-right and bottom-right corners
 }
 .theme-design-high {
     border-radius: 70px 0 70px 0; // Curved top-right and bottom-right corners
@@ -439,20 +439,20 @@ footer {
             width: 100%;  // Cover the entire image container
             height: 100%;
             background-color: $theme;  // Use your theme color variable
-            border-radius: 150px 0 150px 0;
+            border-radius: 90px 0 90px 0;
             position: absolute;
             top: 20px;  // Slight offset for the shape to show
-            left: 30px; 
+            left: 25px; 
             z-index: 1;  // Ensure the shape is behind the image
         }
 
         .about-image {
             z-index: 2;  // Image on top of the shape
-            border-radius: 150px 0 150px 0;
+            border-radius: 90px 0 90px 0;
             overflow: hidden;
 
             img {
-                border-radius: 150px 0 150px 0;
+                border-radius: 90px 0 90px 0;
                 width: 100%;
                 height: auto;
                 object-fit: cover;
@@ -462,7 +462,6 @@ footer {
 
     .about-content {
         flex: 1;
-        padding-left: 40px;
 
         h2 {
             font-size: 2.5rem;
