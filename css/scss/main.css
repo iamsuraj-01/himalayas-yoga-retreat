@@ -409,6 +409,7 @@ footer .link-animated a:hover {
 }
 .about-section .about-content {
   flex: 1;
+  padding: 30px;
 }
 .about-section .about-content h2 {
   font-size: 2.5rem;
