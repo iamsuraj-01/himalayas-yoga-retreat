@@ -490,6 +490,7 @@ footer {
     }
 }
 
+/* Features */
 .features {
     .feature-item {
         position: relative;
@@ -536,60 +537,6 @@ footer {
         border-radius: 50%; /* Makes the image a circle */
         object-fit: cover; /* Ensures the image covers the container evenly */
     }    
-}
-
-/* Service */
-.service {
-    .card {
-        border: none;
-        position: relative;
-        overflow: hidden;
-
-        .card-img {
-            transition: transform 0.4s ease-in-out;
-        }
-
-        &:hover .card-img {
-            transform: scale(1.1);
-        }
-
-        .card-overlay {
-            position: absolute;
-            top: 0;
-            left: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.5);
-            display: flex;
-            justify-content: center;
-            align-items: center;
-            transition: opacity 0.4s ease-in-out;
-        }
-
-        .card-hover-overlay {
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, 0.8);
-            transition: left 0.4s ease-in-out, opacity 0.4s ease-in-out;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: flex-start;
-            opacity: 0;
-        }
-
-        &:hover .card-overlay {
-            opacity: 0;
-        }
-
-        &:hover .card-hover-overlay {
-            left: 0;
-            opacity: 1;
-        }
-    }
 }
 
 /* Plan */
@@ -653,15 +600,41 @@ footer {
     }
 }
 
-/* Testimonial */
 .testimonial-carousel {
+    position: relative;
+    .owl-stage-outer {
+        overflow: hidden; // Ensures only one item is visible at a time
+    }
+    .owl-item {
+        opacity: 0; // Hide all items by default
+        transition: opacity 0.5s ease;
+    }
+    .owl-item.center {
+        opacity: 1; // Show the center item
+        z-index: 2;
+    }
+    .testimonial-item {
+        max-width: 550px; // Limit the width of each testimonial
+        background: $white!important;
+        color: $dark;
+        padding: 20px;
+        border-radius: 15px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        position: absolute; /* Position the item absolutely within its parent */
+        left: 100%; /* Adjust the right positioning */
+    }
+
+    .testimonial-content {
+        font-size: 1rem;
+        line-height: 1.5;
+    }
+
     .owl-dots {
         margin-top: 15px;
         display: flex;
         align-items: flex-end;
         justify-content: center;
     }
-
     .owl-dot {
         position: relative;
         display: inline-block;
@@ -670,37 +643,14 @@ footer {
         height: 15px;
         background: #DDDDDD;
         border-radius: 2px;
-        transition: .5s;
-
+        transition: 0.5s;
         &.active {
             width: 30px;
             background: $theme;
         }
     }
-
-    .owl-item.center {
-        position: relative;
-        z-index: 1;
-    }
-
-    .owl-item .testimonial-item {
-        transition: .5s;
-    }
-
-    .owl-item.center .testimonial-item {
-        background: $theme !important;
-        box-shadow: 0 0 30px #DDDDDD;
-
-        // Make the text color white for the active testimonial item
-        color: $white;
-
-        h4,
-        small,
-        p {
-            color: $white; // Ensures all text inside the active testimonial is white
-        }
-    }
 }
+
 
 /* Retreats Page */
 .custom-side-nav {
@@ -870,12 +820,13 @@ footer {
 }
 
 @media (min-width: 992px) {
-    /* Navbar */
+    /* Sticky Top Navbar 
     .sticky-top.navbar {
         position: fixed;
         width: 100%;
         background: #FFFFFF;
     }
+    */
 
     /* Navbar Transparent
     .navbar {
