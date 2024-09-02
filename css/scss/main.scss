@@ -697,6 +697,79 @@ footer {
     }
 }
 
+/* Retreats Page */
+.custom-side-nav {
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Soft shadow
+    border-radius: 50px 0 50px 0!important;
+
+    .nav-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $white; // Use theme accent color
+        border: none;
+        margin: 10px 0;
+    }
+
+    .nav-list {
+        padding-left: 0;
+        margin-bottom: 20px;
+
+        li {
+            margin-bottom: 30px;
+
+            a {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                text-decoration: none;
+                color: $white;
+                transition: all 0.3s;
+
+                i {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    color: $theme-secondary; // Use theme hover color
+                }
+            }
+        }
+    }
+}
+
+
+.intro {
+    padding: 20px;
+    margin-bottom: 30px;
+    // Add more styles specific to this section
+}
+
+.fee-detail {
+    margin-bottom: 30px;
+    // Add more styles specific to this section
+}
+
+.eligibility {
+    margin-bottom: 30px;
+    // Add more styles specific to this section
+}
+
+.daily-schedule {
+    margin-bottom: 30px;
+    // Add more styles specific to this section
+}
+
+.accommodation {
+    margin-bottom: 30px;
+    // Add more styles specific to this section
+}
   
 /* Media Queries */
 

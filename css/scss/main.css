@@ -605,6 +605,67 @@ footer .link-animated a:hover {
   color: #FFFFFF;
 }
 
+/* Retreats Page */
+.custom-side-nav {
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 50px 0 50px 0 !important;
+}
+.custom-side-nav .nav-title {
+  font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 15px;
+}
+.custom-side-nav .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #FFFFFF;
+  border: none;
+  margin: 10px 0;
+}
+.custom-side-nav .nav-list {
+  padding-left: 0;
+  margin-bottom: 20px;
+}
+.custom-side-nav .nav-list li {
+  margin-bottom: 30px;
+}
+.custom-side-nav .nav-list li a {
+  display: flex;
+  align-items: center;
+  font-size: 1rem;
+  text-decoration: none;
+  color: #FFFFFF;
+  transition: all 0.3s;
+}
+.custom-side-nav .nav-list li a i {
+  margin-right: 10px;
+}
+.custom-side-nav .nav-list li a:hover {
+  color: #0056a8;
+}
+
+.intro {
+  padding: 20px;
+  margin-bottom: 30px;
+}
+
+.fee-detail {
+  margin-bottom: 30px;
+}
+
+.eligibility {
+  margin-bottom: 30px;
+}
+
+.daily-schedule {
+  margin-bottom: 30px;
+}
+
+.accommodation {
+  margin-bottom: 30px;
+}
+
 /* Media Queries */
 /* Smartphones Only */
 @media (max-width: 640px) {
