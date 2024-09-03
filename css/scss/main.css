@@ -339,7 +339,7 @@ footer .link-animated a:hover {
 }
 .carousel .carousel-inner .carousel-item .carousel-caption {
   position: absolute;
-  top: 50%;
+  top: 48%;
   left: 30%;
   transform: translate(-50%, -50%);
   text-align: left;
@@ -348,11 +348,11 @@ footer .link-animated a:hover {
   padding: 0 15px;
 }
 .carousel .carousel-inner .carousel-item .carousel-caption h1 {
-  font-size: 5rem;
+  font-size: 4.8rem;
   border-bottom: 1px solid rgba(255, 255, 255, 0.3);
 }
 .carousel .carousel-inner .carousel-item .carousel-caption p {
-  font-size: 1.25rem;
+  font-size: 1.1rem;
 }
 .carousel .carousel-control-prev,
 .carousel .carousel-control-next {
@@ -705,11 +705,15 @@ footer .link-animated a:hover {
     padding: 0 10px;
   }
   .carousel .carousel-inner .carousel-item .carousel-caption h1 {
-    font-size: 2rem;
+    font-size: 2.2rem;
   }
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 1.2rem;
-    line-height: 1.5;
+    font-size: 1.1rem;
+    line-height: 1.6;
+  }
+  .carousel .carousel-inner .carousel-item .carousel-caption .btn {
+    font-size: 1rem; /* Increase font size for the button */
+    padding: 0.8rem 1.5rem; /* Increase padding for larger button */
   }
   .carousel .carousel-control-prev,
   .carousel .carousel-control-next {
@@ -775,6 +779,9 @@ footer .link-animated a:hover {
   }
   .about-section .about-image-wrapper .about-image img {
     border-radius: 60px 0 60px 0;
+  }
+  .about-section .about-content {
+    padding: 10px;
   }
 }
 @media (min-width: 992px) {

@@ -383,7 +383,7 @@ footer {
 
             .carousel-caption {
                 position: absolute;
-                top: 50%;
+                top: 48%;
                 left: 30%;
                 transform: translate(-50%, -50%);
                 text-align: left;
@@ -392,12 +392,12 @@ footer {
                 padding: 0 15px;
             
                 h1 {
-                    font-size: 5rem;
+                    font-size: 4.8rem;
                     border-bottom: 1px solid rgba(255, 255, 255, 0.3);
                 }
             
                 p {
-                    font-size: 1.25rem;
+                    font-size: 1.1rem;
                 }
             }
             
@@ -812,12 +812,16 @@ footer {
                     padding: 0 10px; // Adjust padding to fit smaller screens
 
                     h1 {
-                        font-size: 2rem; // Smaller font size for titles
+                        font-size: 2.2rem; // Smaller font size for titles
                     }
 
                     p {
-                        font-size: 1.2rem; // Smaller font size for paragraphs
-                        line-height: 1.5; // Adjust line height for readability
+                        font-size: 1.1rem; // Smaller font size for paragraphs
+                        line-height: 1.6; // Adjust line height for readability
+                    }
+                    .btn {
+                        font-size: 1rem; /* Increase font size for the button */
+                        padding: 0.8rem 1.5rem; /* Increase padding for larger button */
                     }
                 }
             }
@@ -909,6 +913,9 @@ footer {
                     border-radius: 60px 0 60px 0;
                 }
             }
+        }
+        .about-content {
+            padding: 10px;
         }
     }
 }
