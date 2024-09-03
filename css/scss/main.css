@@ -753,8 +753,8 @@ footer .link-animated a:hover {
     color: #212529;
   }
   .navbar {
-    padding-top: 10px !important;
-    padding-bottom: 10px !important;
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
   }
   .navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link.show {
     padding: 10px 0;
