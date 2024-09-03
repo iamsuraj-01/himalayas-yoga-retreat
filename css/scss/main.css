@@ -243,7 +243,7 @@ a {
   transition: 0.5s;
 }
 .hover-zoom:hover {
-  transform: scale(1.15);
+  transform: scale(1.1);
 }
 
 /* Navbar */
@@ -383,7 +383,7 @@ footer .link-animated a:hover {
   display: flex;
   justify-content: center;
   align-items: center;
-  max-width: 80%;
+  max-width: 100%;
 }
 .about-section .about-image-wrapper .background-shape {
   width: 100%;
@@ -467,11 +467,6 @@ footer .link-animated a:hover {
      object-fit: cover; /* Ensures the image covers the container evenly */
 }
 
-/* Plan */
-.rounded-top {
-  border-radius: 70px 0 0 0 !important;
-}
-
 /* Gallery */
 .gallery .box {
   width: 350px;
@@ -497,10 +492,6 @@ footer .link-animated a:hover {
   margin: 0 auto;
   overflow: hidden;
   border-radius: 50%; /* Makes the image circular */
-  box-shadow: 0 0 30px #3391e6;
-}
-.team-item:hover {
-  box-shadow: 0 0 30px #3391e6;
 }
 .team-item:hover .team-social {
   background: rgba(9, 30, 62, 0.7);
@@ -697,13 +688,16 @@ footer .link-animated a:hover {
     /* Navbar Brand */
   }
   .navbar .navbar-brand img {
-    width: 100px;
+    width: 70px;
     max-width: 100%;
     height: auto;
   }
+  .navbar .navbar-nav .nav-link {
+    font-size: 14px;
+  }
   /* Carousel */
   .carousel .carousel-inner .carousel-item img {
-    height: 400px;
+    height: 600px;
   }
   .carousel .carousel-inner .carousel-item .carousel-caption {
     width: 90%;
@@ -747,7 +741,7 @@ footer .link-animated a:hover {
     margin-bottom: -75px;
   }
 }
-/* Desktop Only */
+/* Smart phoen and Tablets Only */
 @media (max-width: 991.98px) {
   /* Navbar */
   .sticky-top.navbar {
@@ -758,14 +752,29 @@ footer .link-animated a:hover {
     padding: 10px 0;
     color: #212529;
   }
+  .navbar {
+    padding-top: 0px !important;
+    padding-bottom: 0px !important;
+  }
   .navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link.show {
     padding: 10px 0;
     color: #212529;
   }
-  .about-image-wrapper {
+  .about-section .col-lg-5 {
+    padding: 20px;
+  }
+  .about-section .about-image-wrapper {
     max-width: 100%;
     margin-bottom: 20px;
-    margin: 0 auto;
+  }
+  .about-section .about-image-wrapper .background-shape {
+    border-radius: 60px 0 60px 0;
+  }
+  .about-section .about-image-wrapper .about-image {
+    border-radius: 60px 0 60px 0;
+  }
+  .about-section .about-image-wrapper .about-image img {
+    border-radius: 60px 0 60px 0;
   }
 }
 @media (min-width: 992px) {

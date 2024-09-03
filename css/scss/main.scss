@@ -259,7 +259,7 @@ a {
 .hover-zoom {
     transition: 0.5s;
     &:hover {
-        transform: scale(1.15);
+        transform: scale(1.1);
     }
 }
 
@@ -433,7 +433,7 @@ footer {
         display: flex;
         justify-content: center;
         align-items: center;
-        max-width: 80%; // Ensure a reasonable width for the image
+        max-width: 100%; // Ensure a reasonable width for the image
 
         .background-shape {
             width: 100%;  // Cover the entire image container
@@ -532,11 +532,6 @@ footer {
     }
 }
 
-/* Plan */
-.rounded-top {
-    border-radius: 70px 0 0 0!important;
-}
-
 /* Gallery */
 .gallery {
     .box {
@@ -563,11 +558,6 @@ footer {
         margin: 0 auto;
         overflow: hidden;
         border-radius: 50%; /* Makes the image circular */
-        box-shadow: 0 0 30px $theme;
-    }
-
-    &:hover {
-        box-shadow: 0 0 30px $theme;
     }
 
     &:hover .team-social {
@@ -793,11 +783,18 @@ footer {
 @media (max-width: 640px) {
     /* Navbar */
     .navbar {
+
          /* Navbar Brand */
         .navbar-brand img {
-            width: 100px;
+            width: 70px;
             max-width: 100%;
             height: auto;
+        }
+
+        .navbar-nav {
+            .nav-link {
+                font-size: 14px;
+            }
         }
     }
 
@@ -806,7 +803,7 @@ footer {
         .carousel-inner {
             .carousel-item {
                 img {
-                    height: 400px; // Adjust height for smaller screens
+                    height: 600px; // Adjust height for smaller screens
                 }
 
                 .carousel-caption {
@@ -864,7 +861,7 @@ footer {
     }
 }
 
-/* Desktop Only */
+/* Smart phoen and Tablets Only */
 @media (max-width: 991.98px) {
     /* Navbar */
     .sticky-top.navbar {
@@ -880,6 +877,8 @@ footer {
     }
 
     .navbar {
+        padding-top: 0px!important;
+        padding-bottom: 0px!important;
         .navbar-nav {
             .nav-link {
                 &,
@@ -891,10 +890,26 @@ footer {
         }
     }
 
-    .about-image-wrapper {
-        max-width: 100%; // Full width on smaller screens
-        margin-bottom: 20px; // Add margin-bottom for spacing
-        margin: 0 auto;
+    .about-section {
+        .col-lg-5 {
+            padding: 20px;
+        }
+        .about-image-wrapper {
+            max-width: 100%; // Full width on smaller screens
+            margin-bottom: 20px; // Add margin-bottom for spacing
+        
+            .background-shape {
+                border-radius: 60px 0 60px 0;
+            }
+
+            .about-image {
+                border-radius: 60px 0 60px 0;
+    
+                img {
+                    border-radius: 60px 0 60px 0;
+                }
+            }
+        }
     }
 }
 
