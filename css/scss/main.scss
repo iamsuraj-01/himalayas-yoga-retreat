@@ -812,11 +812,11 @@ footer {
                     padding: 0 10px; // Adjust padding to fit smaller screens
 
                     h1 {
-                        font-size: 1.8rem; // Smaller font size for titles
+                        font-size: 2rem; // Smaller font size for titles
                     }
 
                     p {
-                        font-size: 1rem; // Smaller font size for paragraphs
+                        font-size: 1.2rem; // Smaller font size for paragraphs
                         line-height: 1.5; // Adjust line height for readability
                     }
                 }
@@ -895,7 +895,7 @@ footer {
             padding: 20px;
         }
         .about-image-wrapper {
-            max-width: 100%; // Full width on smaller screens
+            max-width: 95%; // Full width on smaller screens
             margin-bottom: 20px; // Add margin-bottom for spacing
         
             .background-shape {

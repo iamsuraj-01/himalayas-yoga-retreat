@@ -705,10 +705,10 @@ footer .link-animated a:hover {
     padding: 0 10px;
   }
   .carousel .carousel-inner .carousel-item .carousel-caption h1 {
-    font-size: 1.8rem;
+    font-size: 2rem;
   }
   .carousel .carousel-inner .carousel-item .carousel-caption p {
-    font-size: 1rem;
+    font-size: 1.2rem;
     line-height: 1.5;
   }
   .carousel .carousel-control-prev,
@@ -764,7 +764,7 @@ footer .link-animated a:hover {
     padding: 20px;
   }
   .about-section .about-image-wrapper {
-    max-width: 100%;
+    max-width: 95%;
     margin-bottom: 20px;
   }
   .about-section .about-image-wrapper .background-shape {
