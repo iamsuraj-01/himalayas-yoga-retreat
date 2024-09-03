@@ -786,7 +786,7 @@ footer {
 
          /* Navbar Brand */
         .navbar-brand img {
-            width: 70px;
+            width: 80px;
             max-width: 100%;
             height: auto;
         }
@@ -803,7 +803,7 @@ footer {
         .carousel-inner {
             .carousel-item {
                 img {
-                    height: 600px; // Adjust height for smaller screens
+                    height: 650px; // Adjust height for smaller screens
                 }
 
                 .carousel-caption {
@@ -877,8 +877,8 @@ footer {
     }
 
     .navbar {
-        padding-top: 0px!important;
-        padding-bottom: 0px!important;
+        padding-top: 10px!important;
+        padding-bottom: 10px!important;
         .navbar-nav {
             .nav-link {
                 &,

@@ -688,7 +688,7 @@ footer .link-animated a:hover {
     /* Navbar Brand */
   }
   .navbar .navbar-brand img {
-    width: 70px;
+    width: 80px;
     max-width: 100%;
     height: auto;
   }
@@ -697,7 +697,7 @@ footer .link-animated a:hover {
   }
   /* Carousel */
   .carousel .carousel-inner .carousel-item img {
-    height: 600px;
+    height: 650px;
   }
   .carousel .carousel-inner .carousel-item .carousel-caption {
     width: 90%;
@@ -753,8 +753,8 @@ footer .link-animated a:hover {
     color: #212529;
   }
   .navbar {
-    padding-top: 0px !important;
-    padding-bottom: 0px !important;
+    padding-top: 10px !important;
+    padding-bottom: 10px !important;
   }
   .navbar .navbar-nav .nav-link, .navbar .navbar-nav .nav-link.show {
     padding: 10px 0;
