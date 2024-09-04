@@ -841,56 +841,6 @@ footer {
     }
 }
 
-/* Highlights Section Styling */
-#highlights {
-    .p-4 {
-        background-color: $white; // White background for the content box
-        border-radius: 10px; // Rounded corners
-        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-    }
-
-    h2 {
-        color: #333; // Dark color for the heading
-    }
-
-    .custom-underline {
-        width: 50px;
-        height: 3px;
-        background-color: $theme; // Custom green color for the underline
-        margin-bottom: 20px;
-    }
-
-    .list-group-item {
-        border: none; // Remove default border
-        padding: 15px 20px; // Custom padding for spacing
-        font-size: 16px; // Font size for better readability
-        display: flex;
-        align-items: center;
-        transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
-
-        i {
-            color: $theme; // Theme color for icons
-            margin-right: 10px; // Space between icon and text
-        }
-
-        &:hover {
-            background-color: rgba($theme, 0.1); // Light theme color background on hover
-            transform: translateY(-2px); // Slight lift effect on hover
-        }
-
-        span {
-            color: #333; // Text color
-        }
-    }
-
-    img {
-        max-width: 100%; // Ensures image is responsive
-        border-radius: 10px; // Rounded corners for the image
-        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
-    }
-}
-
-
 /* Fee Detail Section Styling */
 #fee-detail {
     .p-4 {

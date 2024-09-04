@@ -729,46 +729,6 @@ footer .link-animated a:hover {
   color: #666;
 }
 
-/* Highlights Section Styling */
-#highlights .p-4 {
-  background-color: #FFFFFF;
-  border-radius: 10px;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
-}
-#highlights h2 {
-  color: #333;
-}
-#highlights .custom-underline {
-  width: 50px;
-  height: 3px;
-  background-color: #3391e6;
-  margin-bottom: 20px;
-}
-#highlights .list-group-item {
-  border: none;
-  padding: 15px 20px;
-  font-size: 16px;
-  display: flex;
-  align-items: center;
-  transition: background-color 0.3s ease, transform 0.3s ease;
-}
-#highlights .list-group-item i {
-  color: #3391e6;
-  margin-right: 10px;
-}
-#highlights .list-group-item:hover {
-  background-color: rgba(51, 145, 230, 0.1);
-  transform: translateY(-2px);
-}
-#highlights .list-group-item span {
-  color: #333;
-}
-#highlights img {
-  max-width: 100%;
-  border-radius: 10px;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-}
-
 /* Fee Detail Section Styling */
 #fee-detail .p-4 {
   background-color: #FFFFFF;
