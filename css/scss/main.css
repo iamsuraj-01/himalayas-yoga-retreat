@@ -612,64 +612,369 @@ footer .link-animated a:hover {
 }
 
 /* Retreats Page */
+/* Left Side Menu */
 .custom-side-nav {
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  border-radius: 50px 0 50px 0 !important;
+  background-color: #0056a8;
 }
 .custom-side-nav .nav-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 15px;
-}
-.custom-side-nav .custom-underline {
-  width: 50px;
-  height: 3px;
-  background-color: #FFFFFF;
-  border: none;
-  margin: 10px 0;
+  color: #FFFFFF;
 }
 .custom-side-nav .nav-list {
   padding-left: 0;
   margin-bottom: 20px;
 }
-.custom-side-nav .nav-list li {
-  margin-bottom: 30px;
+.custom-side-nav .nav-list .nav-item {
+  margin-bottom: 15px;
 }
-.custom-side-nav .nav-list li a {
+.custom-side-nav .nav-list .nav-item .nav-link {
   display: flex;
   align-items: center;
   font-size: 1rem;
-  text-decoration: none;
   color: #FFFFFF;
-  transition: all 0.3s;
+  text-decoration: none;
+  padding: 10px 15px;
+  background-color: #60a9ec;
+  border-radius: 5px;
+  transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
-.custom-side-nav .nav-list li a i {
+.custom-side-nav .nav-list .nav-item .nav-link i {
   margin-right: 10px;
 }
-.custom-side-nav .nav-list li a:hover {
-  padding-left: 10px;
+.custom-side-nav .nav-list .nav-item .nav-link:hover {
+  background-color: #1978cd;
+  padding-left: 20px;
+}
+.custom-side-nav .btn {
+  margin-top: 20px;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: background-color 0.3s ease, color 0.3s ease;
+}
+.custom-side-nav .btn:hover {
+  background-color: #0056a8;
+  color: #FFFFFF;
 }
 
-.intro {
+/* Right Side Menu */
+/* Top Section Styling */
+#yoga-retreat-intro .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#yoga-retreat-intro h2 {
+  color: #333;
+}
+#yoga-retreat-intro .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #4CAF50;
+  margin-bottom: 20px;
+}
+#yoga-retreat-intro p {
+  color: #666;
+}
+#yoga-retreat-intro .text-theme {
+  color: #3391e6;
+}
+#yoga-retreat-intro img {
+  max-width: 100%;
+  height: auto;
+  margin-top: 20px;
+  border-radius: 10px;
+}
+
+/* Overview Section Styling */
+#overview .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#overview h2 {
+  color: #333;
+}
+#overview .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3391e6;
+  margin-bottom: 20px;
+}
+#overview .hover-card {
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+#overview .hover-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+#overview .card {
+  background-color: #FFFFFF;
+}
+#overview .card .card-body i {
+  color: #3391e6;
+  transition: color 0.3s;
+}
+#overview .card .card-body:hover i {
+  color: #212529;
+}
+#overview .card .card-body .card-title {
+  font-weight: bold;
+  color: #333;
+}
+#overview .card .card-body .card-text {
+  color: #666;
+}
+
+/* Highlights Section Styling */
+#highlights .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+#highlights h2 {
+  color: #333;
+}
+#highlights .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3391e6;
+  margin-bottom: 20px;
+}
+#highlights .list-group-item {
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#highlights .list-group-item i {
+  color: #3391e6;
+  margin-right: 10px;
+}
+#highlights .list-group-item:hover {
+  background-color: rgba(51, 145, 230, 0.1);
+  transform: translateY(-2px);
+}
+#highlights .list-group-item span {
+  color: #333;
+}
+#highlights img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Fee Detail Section Styling */
+#fee-detail .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+#fee-detail h2 {
+  color: #333;
+  font-weight: 700;
+}
+#fee-detail .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3391e6;
+  margin-bottom: 20px;
+}
+#fee-detail .card {
+  border: none;
+  border-radius: 10px;
+  background-color: #f9f9f9;
   padding: 20px;
-  margin-bottom: 30px;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+#fee-detail .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+#fee-detail .card .circle-icon {
+  width: 60px;
+  height: 60px;
+  background-color: #3391e6;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 20px;
+}
+#fee-detail .card h4 {
+  color: #333;
+  font-weight: 600;
+}
+#fee-detail .card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 0;
+}
+#fee-detail .fee-includes img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#fee-detail .fee-includes .highlights-list {
+  padding-left: 0;
+}
+#fee-detail .fee-includes .highlights-list .list-group-item {
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#fee-detail .fee-includes .highlights-list .list-group-item i {
+  color: #3391e6;
+  margin-right: 10px;
+}
+#fee-detail .fee-includes .highlights-list .list-group-item:hover {
+  background-color: rgba(51, 145, 230, 0.1);
+  transform: translateY(-2px);
+}
+#fee-detail .fee-includes .highlights-list .list-group-item span {
+  color: #333;
 }
 
-.fee-detail {
-  margin-bottom: 30px;
+/* Eligibility Section Styling */
+#eligibility .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+#eligibility h2 {
+  color: #333;
+  font-weight: 700;
+}
+#eligibility .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3391e6;
+  margin-bottom: 20px;
+}
+#eligibility p {
+  color: #555;
+  font-weight: 600;
+  margin-bottom: 15px;
+}
+#eligibility .eligibility-list {
+  padding-left: 0;
+}
+#eligibility .eligibility-list .list-group-item {
+  border: none;
+  padding: 15px 20px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#eligibility .eligibility-list .list-group-item i {
+  color: #3391e6;
+  margin-right: 10px;
+}
+#eligibility .eligibility-list .list-group-item:hover {
+  background-color: rgba(51, 145, 230, 0.1);
+  transform: translateY(-2px);
+}
+#eligibility .eligibility-list .list-group-item span {
+  color: #333;
+}
+#eligibility img {
+  max-width: 100%;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
 }
 
-.eligibility {
-  margin-bottom: 30px;
+/* Daily Schedule Section Styling */
+#daily-schedule .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+#daily-schedule h2 {
+  color: #333;
+  font-weight: 700;
+}
+#daily-schedule .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3391e6;
+  margin-bottom: 20px;
+}
+#daily-schedule .table-responsive {
+  margin-top: 20px;
+}
+#daily-schedule .daily-schedule-table th {
+  background-color: #3391e6;
+  color: #fff;
+  font-weight: 600;
+}
+#daily-schedule .daily-schedule-table tbody tr:hover {
+  background-color: rgba(51, 145, 230, 0.1);
+}
+#daily-schedule .daily-schedule-table td {
+  color: #333;
+  font-size: 15px;
+  padding: 15px;
+  vertical-align: middle;
+}
+#daily-schedule .daily-schedule-table .table-hover tbody tr:hover {
+  background-color: rgba(51, 145, 230, 0.08);
 }
 
-.daily-schedule {
-  margin-bottom: 30px;
+/* Accommodation Section Styling */
+#accommodation .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-
-.accommodation {
-  margin-bottom: 30px;
+#accommodation h2 {
+  color: #333;
+}
+#accommodation .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3391e6;
+  margin-bottom: 20px;
+}
+#accommodation .carousel .carousel-inner .carousel-item img {
+  border-radius: 10px;
+  width: 100%;
+  height: 250px;
+  -o-object-fit: cover;
+     object-fit: cover;
+}
+#accommodation .carousel .carousel-control-prev-icon,
+#accommodation .carousel .carousel-control-next-icon {
+  background-color: rgba(0, 0, 0, 0.3);
+  border-radius: 50%;
+}
+#accommodation .list-group-item {
+  border: none;
+  padding: 10px 15px;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+#accommodation .list-group-item i {
+  color: #3391e6;
+  margin-right: 10px;
+}
+#accommodation .list-group-item:hover {
+  background-color: rgba(51, 145, 230, 0.1);
+  transform: translateY(-2px);
 }
 
 /* Media Queries */

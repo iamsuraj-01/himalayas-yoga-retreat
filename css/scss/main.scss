@@ -694,78 +694,462 @@ footer {
   
   
 /* Retreats Page */
+
+/* Left Side Menu */
 .custom-side-nav {
     padding: 30px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Soft shadow
-    border-radius: 50px 0 50px 0!important;
+    background-color: $theme-secondary; // Main theme color background
 
     .nav-title {
         font-size: 1.2rem;
         font-weight: bold;
         margin-bottom: 15px;
-    }
-
-    .custom-underline {
-        width: 50px;
-        height: 3px;
-        background-color: $white; // Use theme accent color
-        border: none;
-        margin: 10px 0;
+        color: $white;
     }
 
     .nav-list {
         padding-left: 0;
         margin-bottom: 20px;
 
-        li {
-            margin-bottom: 30px;
+        .nav-item {
+            margin-bottom: 15px;
 
-            a {
+            .nav-link {
                 display: flex;
                 align-items: center;
                 font-size: 1rem;
-                text-decoration: none;
                 color: $white;
-                transition: all 0.3s;
+                text-decoration: none;
+                padding: 10px 15px;
+                background-color: lighten($theme, 10%); // Lightened background for each link
+                border-radius: 5px; // Rounded corners
+                transition: background-color 0.3s ease, padding-left 0.3s ease; // Smooth transition
 
                 i {
                     margin-right: 10px;
                 }
 
                 &:hover {
-                    padding-left: 10px;// Use theme hover color
+                    background-color: darken($theme, 10%); // Darker color on hover
+                    padding-left: 20px; // Indent on hover
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $theme-secondary;
+            color: $white;
+        }
+    }
+}
+
+
+/* Right Side Menu */
+
+/* Top Section Styling */
+#yoga-retreat-intro {
+    .p-4 {
+        background-color: $white; // Background color for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: #4CAF50; // Custom green color for the underline
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #666; // Slightly muted color for the paragraph text
+    }
+
+    .text-theme {
+        color: $theme; // Theme color for specific text highlights
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; // Responsive image
+        margin-top: 20px;
+        border-radius: 10px; // Rounded corners for the image
+    }
+}
+
+/* Overview Section Styling */
+#overview {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Theme color for the underline
+        margin-bottom: 20px;
+    }
+
+    .hover-card {
+        transition: transform 0.3s, box-shadow 0.3s; // Smooth transition for hover effect
+
+        &:hover {
+            transform: translateY(-10px); // Lifts the card up slightly on hover
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); // Adds more depth on hover
+        }
+    }
+
+    .card {
+        background-color: $white;
+        .card-body {
+            i {
+                color: $theme; // Theme color for icons
+                transition: color 0.3s; // Smooth color transition for icons on hover
+            }
+    
+            &:hover i {
+                color: $dark; // Darker color on hover for icons
+            }
+    
+            .card-title {
+                font-weight: bold;
+                color: #333; // Dark color for card titles
+            }
+    
+            .card-text {
+                color: #666; // Slightly muted color for card text
+            }
+        }
+    }
+}
+
+/* Highlights Section Styling */
+#highlights {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Custom green color for the underline
+        margin-bottom: 20px;
+    }
+
+    .list-group-item {
+        border: none; // Remove default border
+        padding: 15px 20px; // Custom padding for spacing
+        font-size: 16px; // Font size for better readability
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+
+        i {
+            color: $theme; // Theme color for icons
+            margin-right: 10px; // Space between icon and text
+        }
+
+        &:hover {
+            background-color: rgba($theme, 0.1); // Light theme color background on hover
+            transform: translateY(-2px); // Slight lift effect on hover
+        }
+
+        span {
+            color: #333; // Text color
+        }
+    }
+
+    img {
+        max-width: 100%; // Ensures image is responsive
+        border-radius: 10px; // Rounded corners for the image
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+}
+
+
+/* Fee Detail Section Styling */
+#fee-detail {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Bottom margin for spacing
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+        font-weight: 700; // Bold font for heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Theme color for the underline
+        margin-bottom: 20px;
+    }
+
+    .card {
+        border: none; // Remove default card border
+        border-radius: 10px; // Rounded corners for the card
+        background-color: #f9f9f9; // Light background color for the card
+        padding: 20px; // Padding for content inside the card
+        transition: transform 0.3s ease, box-shadow 0.3s ease; // Smooth transition for hover effects
+
+        &:hover {
+            transform: translateY(-5px); // Lift effect on hover
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15); // Slight shadow on hover
+        }
+
+        .circle-icon {
+            width: 60px;
+            height: 60px;
+            background-color: $theme; // Theme color for the icon background
+            border-radius: 50%; // Circular shape
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 20px; // Margin below the icon
+        }
+
+        h4 {
+            color: #333; // Text color for fee amounts
+            font-weight: 600; // Semi-bold font weight
+        }
+
+        p {
+            font-size: 14px; // Smaller font size for description
+            color: #666; // Muted text color for fee description
+            margin-bottom: 0; // Remove bottom margin
+        }
+    }
+    .fee-includes {
+        img {
+            max-width: 100%; // Ensures the image is responsive
+            border-radius: 10px; // Rounded corners for the image
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        }
+        .highlights-list {
+            padding-left: 0; // Remove default padding from list
+            .list-group-item {
+                border: none; // Remove default border
+                padding: 15px 20px; // Custom padding for spacing
+                font-size: 16px; // Font size for better readability
+                display: flex;
+                align-items: center;
+                transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+    
+                i {
+                    color: $theme; // Theme color for icons
+                    margin-right: 10px; // Space between icon and text
+                }
+    
+                &:hover {
+                    background-color: rgba($theme, 0.1); // Light theme color background on hover
+                    transform: translateY(-2px); // Slight lift effect on hover
+                }
+    
+                span {
+                    color: #333; // Text color
                 }
             }
         }
     }
 }
 
-.intro {
-    padding: 20px;
-    margin-bottom: 30px;
-    // Add more styles specific to this section
+/* Eligibility Section Styling */
+#eligibility {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Bottom margin for spacing
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+        font-weight: 700; // Bold font for heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Theme color for the underline
+        margin-bottom: 20px;
+    }
+
+    p {
+        color: #555; // Slightly muted color for paragraph text
+        font-weight: 600; // Semi-bold font for emphasis
+        margin-bottom: 15px; // Margin below paragraph
+    }
+
+    .eligibility-list {
+        padding-left: 0; // Remove default padding from list
+        .list-group-item {
+            border: none; // Remove default border
+            padding: 15px 20px; // Custom padding for spacing
+            font-size: 16px; // Font size for readability
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+
+            i {
+                color: $theme; // Theme color for icons
+                margin-right: 10px; // Space between icon and text
+            }
+
+            &:hover {
+                background-color: rgba($theme, 0.1); // Light theme color background on hover
+                transform: translateY(-2px); // Slight lift effect on hover
+            }
+
+            span {
+                color: #333; // Text color
+            }
+        }
+    }
+
+    img {
+        max-width: 100%; // Ensures the image is responsive
+        border-radius: 10px; // Rounded corners for the image
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Bottom margin for spacing
+    }
 }
 
-.fee-detail {
-    margin-bottom: 30px;
-    // Add more styles specific to this section
+/* Daily Schedule Section Styling */
+#daily-schedule {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Margin for spacing
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+        font-weight: 700; // Bold font for the heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Theme color for the underline
+        margin-bottom: 20px;
+    }
+
+    .table-responsive {
+        margin-top: 20px; // Space above the table
+    }
+
+    .daily-schedule-table {
+        th {
+            background-color: $theme; // Theme color for table header
+            color: #fff; // White text color for better contrast
+            font-weight: 600; // Bold text for headers
+        }
+
+        tbody tr {
+            &:hover {
+                background-color: rgba($theme, 0.1); // Light hover effect for table rows
+            }
+        }
+
+        td {
+            color: #333; // Text color for table cells
+            font-size: 15px; // Font size for better readability
+            padding: 15px; // Padding for cells
+            vertical-align: middle; // Align text vertically in the middle
+        }
+
+        .table-hover tbody tr:hover {
+            background-color: rgba($theme, 0.08); // Slight background change on hover
+        }
+    }
 }
 
-.eligibility {
-    margin-bottom: 30px;
-    // Add more styles specific to this section
+/* Accommodation Section Styling */
+#accommodation {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Custom theme color for the underline
+        margin-bottom: 20px;
+    }
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    border-radius: 10px; // Rounded corners for carousel images
+                    width: 100%; // Full width to fit the container
+                    height: 250px; // Fixed height for all carousel images
+                    object-fit: cover; // Ensures image covers the set height without distortion
+                }
+            }
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.3); // Darker background for control icons
+            border-radius: 50%;
+        }
+    }
+
+    .list-group-item {
+        border: none; // Remove default border
+        padding: 10px 15px; // Custom padding for list items
+        font-size: 16px; // Font size for better readability
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+
+        i {
+            color: $theme; // Theme color for icons
+            margin-right: 10px; // Space between icon and text
+        }
+
+        &:hover {
+            background-color: rgba($theme, 0.1); // Light theme color background on hover
+            transform: translateY(-2px); // Slight lift effect on hover
+        }
+    }
 }
 
-.daily-schedule {
-    margin-bottom: 30px;
-    // Add more styles specific to this section
-}
-
-.accommodation {
-    margin-bottom: 30px;
-    // Add more styles specific to this section
-}
-  
 /* Media Queries */
 
 /* Smartphone and Tablets Only */
