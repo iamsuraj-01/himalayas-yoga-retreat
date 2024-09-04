@@ -562,14 +562,6 @@ footer .link-animated a:hover {
 }
 
 /* About Page */
-.img-grid .img-fluid {
-  border-radius: 20px;
-  transition: transform 0.3s ease;
-}
-.img-grid .img-fluid:hover {
-  transform: scale(1.05);
-}
-
 /* Our Mission Parallax Section */
 .parallax-mission-section {
   position: relative;
@@ -768,7 +760,35 @@ footer .link-animated a:hover {
   .responsive-content {
     justify-content: flex-start !important;
   }
+  .parallax-mission-section .mission-content h2 {
+    font-size: 2.2rem;
+  }
+  .parallax-mission-section .mission-content p {
+    font-size: 1.1rem;
+  }
 }
+/* Contact Page */
+/* Contact Section Styling */
+.contact .icon-circle {
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.contact .yoga-session .session-image {
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+.contact .yoga-session .session-content {
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  padding: 20px;
+}
+.contact .yoga-session .session-content h3, .contact .yoga-session .session-content p {
+  color: #FFFFFF;
+}
+
 /* Desktop Only */
 @media (min-width: 992px) {
   /* Sticky Top Navbar 

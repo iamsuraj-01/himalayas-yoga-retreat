@@ -637,18 +637,7 @@ footer {
 }
 
 /* About Page */
-
-.img-grid {
-    .img-fluid {
-      border-radius: 20px; // Adjust radius as needed for rounded corners
-      transition: transform 0.3s ease;
-      &:hover {
-        transform: scale(1.05); // Slight zoom effect on hover
-      }
-    }
-  }
   
-
 /* Our Mission Parallax Section */
 .parallax-mission-section {
     position: relative;
@@ -701,7 +690,7 @@ footer {
         text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5); // Highlighted effect
       }
     }
-  }
+}
   
   
 /* Retreats Page */
@@ -896,7 +885,51 @@ footer {
     .responsive-content {
         justify-content: flex-start !important;
     }
+
+    .parallax-mission-section {
+        .mission-content {
+          h2 {
+            font-size: 2.2rem;
+          }
+      
+          p {
+            font-size: 1.1rem;
+          }
+        }
+      }
 }
+
+/* Contact Page */
+
+/* Contact Section Styling */
+.contact {
+
+    .icon-circle {
+        width: 60px;
+        height: 60px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .yoga-session {
+        .session-image {
+            border-top-left-radius: 10px;
+            border-top-right-radius: 10px;
+        }
+
+        .session-content {
+            border-bottom-left-radius: 10px;
+            border-bottom-right-radius: 10px;
+            padding: 20px;
+            h3, p {
+                color: $white; // White text color
+            }
+        }
+    }
+}
+
+
 
 /* Desktop Only */
 @media (min-width: 992px) {
