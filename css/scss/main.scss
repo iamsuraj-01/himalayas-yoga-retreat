@@ -419,7 +419,6 @@ footer {
 /* Banner */
 .banner {
     background-size: cover;
-    margin-bottom: 90px;
 }
 
 /* About Section */
@@ -713,7 +712,7 @@ footer {
         margin-bottom: 20px;
 
         .nav-item {
-            margin-bottom: 15px;
+            margin-bottom: 20px;
 
             .nav-link {
                 display: flex;
@@ -818,24 +817,26 @@ footer {
     }
 
     .card {
-        background-color: $white;
+        background-color: $theme;
+        border: 2px solid $theme;
+        border-radius: 30px;
         .card-body {
             i {
-                color: $theme; // Theme color for icons
+                color: $white; // Theme color for icons
                 transition: color 0.3s; // Smooth color transition for icons on hover
             }
     
             &:hover i {
-                color: $dark; // Darker color on hover for icons
+                color: $white; // Darker color on hover for icons
             }
     
             .card-title {
                 font-weight: bold;
-                color: #333; // Dark color for card titles
+                color: $white; // Dark color for card titles
             }
     
             .card-text {
-                color: #666; // Slightly muted color for card text
+                color: $white; // Slightly muted color for card text
             }
         }
     }

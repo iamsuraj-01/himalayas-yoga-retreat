@@ -369,7 +369,6 @@ footer .link-animated a:hover {
 /* Banner */
 .banner {
   background-size: cover;
-  margin-bottom: 90px;
 }
 
 /* About Section */
@@ -629,7 +628,7 @@ footer .link-animated a:hover {
   margin-bottom: 20px;
 }
 .custom-side-nav .nav-list .nav-item {
-  margin-bottom: 15px;
+  margin-bottom: 20px;
 }
 .custom-side-nav .nav-list .nav-item .nav-link {
   display: flex;
@@ -712,21 +711,23 @@ footer .link-animated a:hover {
   box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 }
 #overview .card {
-  background-color: #FFFFFF;
+  background-color: #3391e6;
+  border: 2px solid #3391e6;
+  border-radius: 30px;
 }
 #overview .card .card-body i {
-  color: #3391e6;
+  color: #FFFFFF;
   transition: color 0.3s;
 }
 #overview .card .card-body:hover i {
-  color: #212529;
+  color: #FFFFFF;
 }
 #overview .card .card-body .card-title {
   font-weight: bold;
-  color: #333;
+  color: #FFFFFF;
 }
 #overview .card .card-body .card-text {
-  color: #666;
+  color: #FFFFFF;
 }
 
 /* Fee Detail Section Styling */
