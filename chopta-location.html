@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <title>Yoga Retreat - Chopta</title>
+    <meta content="width=device-width, initial-scale=1.0" name="viewport">
+    <meta content="HTML" name="keywords">
+    <meta content="HTML" name="description">
+
+    <!-- Favicon -->
+    <link href="images/favicon.ico" rel="icon">
+
+    <!-- Owl Carousel Slider CSS -->
+    <link href="lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+
+    <!-- Light Slider CSS -->
+    <link href="lib/lightslider/lightslider.css" rel="stylesheet">
+
+    <!-- Animation CSS -->
+    <link href="lib/animate/animate.min.css" rel="stylesheet">
+
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Font Awesome CSS -->
+    <link href="fonts/css/font-awesome.min.css" rel="stylesheet">
+
+    <!-- Bootstrap Icon Font CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.4.1/font/bootstrap-icons.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link href="css/scss/main.css" rel="stylesheet">
+</head>
+
+<body>
+    <!-- Spinner Section -->
+    <div id="spinner" class="show bg-white position-fixed translate-middle w-100 vh-100 top-50 start-50 d-flex align-items-center justify-content-center">
+        <div class="spinner"></div>
+    </div>
+
+    <!-- Header Section -->
+    <header class="container-fluid position-relative p-0">
+        <!-- Navbar Section -->
+        <nav class="navbar navbar-expand-lg navbar-dark px-4 py-3 py-lg-0">
+            <a href="/" class="navbar-brand p-0">
+                <img src='images/logo.jpeg' alt="Logo" rel="preload" class="navbar-brand-image" />
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse">
+                <span class="fa fa-bars"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarCollapse">
+                <div class="navbar-nav ms-auto py-0">
+                    <a href="/" class="nav-item nav-link">Home</a>
+                    <a href="about.html" class="nav-item nav-link">About Us</a>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Yoga Retreats</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="3-days-yoga-retreats.html" class="dropdown-item">3 days yoga retreats</a>
+                            <a href="5-days-yoga-retreats.html" class="dropdown-item">5 days yoga retreats</a>
+                            <a href="7-days-yoga-retreats.html" class="dropdown-item">7 days yoga retreats</a>
+                        </div>
+                    </div>
+                    <div class="nav-item dropdown">
+                        <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown">Locations</a>
+                        <div class="dropdown-menu m-0">
+                            <a href="rishikesh-location.html" class="dropdown-item">Rishikesh</a>
+							<a href="chopta-location.html" class="dropdown-item active">Chopta</a>
+							<a href="himalaya-location.html" class="dropdown-item">Himalaya</a>
+                        </div>
+                    </div>
+                    <a href="contact.html" class="nav-item nav-link">Contact Us</a>
+                </div>
+                <a href="register.html" class="btn hover-fill btn-theme theme-design py-md-3 px-md-5 ms-auto">Register Now</a>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Banner Section -->
+    <div class="container-fluid bg-theme py-5 banner" style="background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)), url('images/chopta-banner.jpg') center center no-repeat;">
+        <div class="row py-5">
+            <div class="col-12 mt-lg-5 text-center">
+                <h1 class="display-4 text-white animated zoomIn">Chopta</h1>
+                <a href="/" class="h5 text-white">Home</a>
+                <i class="fas fa-angle-right text-white px-2"></i>
+                <a href="chopta-location.html" class="h5 text-white">Chopta</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Chopta Page -->
+    <div class="chopta-page container-fluid py-5 wow fadeInUp" data-wow-delay="0.1s" style="background-color: #FAF8F8;">
+        <div class="container p-5">
+            <div class="row">
+                <!-- Left Side Navigation - col-lg-3 -->
+                <div class="col-lg-3 mb-3">
+                    <div class="nav-menu bg-theme text-white p-4 rounded sticky-top custom-side-nav" style="top: calc(50vh - 200px);">
+                        <h4 class="nav-title mb-3">Explore Chopta</h4>
+                        <ul class="nav-list list-unstyled">
+                            <li class="nav-item">
+                                <a href="#introduction-location" class="nav-link">
+                                    <i class="fas fa-map-marker-alt"></i> About Chopta
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#highlights-location" class="nav-link">
+                                    <i class="fas fa-star"></i> Key Highlights
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#activities-location" class="nav-link">
+                                    <i class="fas fa-running"></i> Activities
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#accommodations-location" class="nav-link">
+                                    <i class="fas fa-bed"></i> Accommodation
+                                </a>
+                            </li>
+                            <li class="nav-item">
+                                <a href="#getting-there-location" class="nav-link">
+                                    <i class="fas fa-plane"></i> Getting There
+                                </a>
+                            </li>
+                        </ul>
+                        <a href="register.html" class="btn hover-fill bg-white text-theme theme-design py-md-2 px-md-4">Book Now</a>
+                    </div>
+                </div>
+
+                <!-- Right Side Content - col-lg-9 -->
+                <div class="col-lg-9">
+                    <!-- Introduction Section -->
+                    <div id="introduction-location" class="mb-5 wow fadeInUp" data-wow-delay="0.2s">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <h2 class="text-dark mb-4 fw-bold"><span class="text-theme fw-bold">C</span>hopta</h2>
+                            <hr class="custom-underline">
+                            <p class="text-justify">Chopta, also known as the "Mini Switzerland of India," is a charming hill station nestled in the Garhwal Himalayas of Uttarakhand. Renowned for its panoramic views of majestic peaks, dense forests, and alpine meadows, Chopta is an ideal destination for nature lovers, trekkers, and those seeking tranquility.</p>
+                            <div class="text-center">
+                                <img src="images/chopta-yoga-1.jpg" class="img-fluid rounded" alt="Chopta Overview">
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Key Highlights Section -->
+                    <div id="highlights-location" class="mb-5 wow fadeInUp" data-wow-delay="0.3s">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <h2 class="text-dark mb-4 fw-bold"><span class="text-theme fw-bold">H</span>ighlights</h2>
+                            <hr class="custom-underline">
+                            <p>Chopta, known for its breathtaking beauty and unspoiled landscapes, offers a unique blend of adventure and serenity. From the highest Shiva temple at Tungnath to the scenic trails leading to Chandrashila peak, Chopta is a haven for trekkers and spiritual seekers alike.</p>
+                            <div class="row">
+                                <!-- Left Side: List -->
+                                <div class="col-lg-7">
+                                    <ul class="list-group list-group-flush highlights-list">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-hiking text-theme me-2"></i> Trek to Tungnath, the highest Shiva temple
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-mountain text-theme me-2"></i> Climb to Chandrashila for panoramic views
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-tree text-theme me-2"></i> Explore dense pine and rhododendron forests
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-water text-theme me-2"></i> Camp near pristine meadows and rivers
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Right Side: Image -->
+                                <div class="col-lg-5">
+                                    <img src="images/chopta-yoga-2.jpg" alt="Key Highlights of Chopta" class="img-fluid rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Activities Section -->
+                    <div id="activities-location" class="mb-5 wow fadeInUp" data-wow-delay="0.4s">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <h2 class="text-dark mb-4 fw-bold"><span class="text-theme fw-bold">A</span>ctivities</h2>
+                            <hr class="custom-underline">
+                            <p>Chopta is a paradise for both adventurers and nature enthusiasts. Engage in activities like trekking to Tungnath, bird watching, camping amidst lush meadows, or simply soaking in the natural beauty of the Himalayas. Chopta provides a serene environment for yoga and meditation, making it a perfect getaway for relaxation and adventure.</p>
+                            <div class="row">
+                                <!-- Left Side: List -->
+                                <div class="col-lg-7">
+                                    <ul class="list-group list-group-flush">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-hiking text-theme me-2"></i> Trek to Tungnath Temple and Chandrashila Peak
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-binoculars text-theme me-2"></i> Bird Watching in the Kedarnath Wildlife Sanctuary
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-campground text-theme me-2"></i> Overnight Camping in Picturesque Meadows
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-om text-theme me-2"></i> Yoga and Meditation in Tranquil Settings
+                                        </li>
+                                    </ul>
+                                </div>
+                                <!-- Right Side: Image -->
+                                <div class="col-lg-5">
+                                    <img src="images/chopta-yoga-3.jpg" alt="Popular Activities in Chopta" class="img-fluid rounded">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Accommodation Section -->
+                    <div id="accommodations-location" class="mb-5 wow fadeInUp" data-wow-delay="0.1s">
+                        <div class="p-4 bg-white rounded shadow-sm wow fadeInUp" data-wow-delay="0.2s">
+                            <h2 class="text-dark mb-4 fw-bold"><span class="text-theme fw-bold">A</span>ccommodation</h2>
+                            <hr class="custom-underline">
+                            <p>Experience comfortable stays in Chopta, ranging from quaint cottages to eco-friendly lodges. Most accommodations offer stunning views of the snow-capped Himalayan peaks, providing a peaceful setting for yoga, meditation, or simply unwinding in nature.</p>
+                            <div class="row">
+                                <!-- First Carousel for Accommodation Option 1 -->
+                                <div class="col-lg-6 mb-4">
+                                    <div id="carouselAccommodation1" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner rounded">
+                                            <div class="carousel-item active">
+                                                <img src="images/Private room.jpg" class="d-block w-100" alt="Two Single Beds">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/reception area.jpg" class="d-block w-100" alt="Room Interior">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/sharedroom1.jpg" class="d-block w-100" alt="Yoga Area">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselAccommodation1" role="button" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselAccommodation1" role="button" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- Amenities List for Accommodation Option 1 -->
+                                    <ul class="list-group list-group-flush mt-3">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-bed text-theme me-2"></i>Two Single Beds
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-bath text-theme me-2"></i>Shower / AC / Hot Water / Wi-Fi
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-utensils text-theme me-2"></i>Breakfast, Lunch, Dinner
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-calendar-check text-theme me-2"></i>3-Days Yoga Retreat
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-book text-theme me-2"></i>Yoga Equipment & Learning Materials
+                                        </li>
+                                    </ul>
+                                </div>
+
+                                <!-- Second Carousel for Accommodation Option 2 -->
+                                <div class="col-lg-6 mb-4">
+                                    <div id="carouselAccommodation2" class="carousel slide" data-bs-ride="carousel">
+                                        <div class="carousel-inner rounded">
+                                            <div class="carousel-item active">
+                                                <img src="images/sharedroom2.jpg" class="d-block w-100" alt="Double Bed">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/dinning area.jpg" class="d-block w-100" alt="Room Interior">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="images/bathroom.jpg" class="d-block w-100" alt="Bathroom">
+                                            </div>
+                                        </div>
+                                        <a class="carousel-control-prev" href="#carouselAccommodation2" role="button" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Previous</span>
+                                        </a>
+                                        <a class="carousel-control-next" href="#carouselAccommodation2" role="button" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Next</span>
+                                        </a>
+                                    </div>
+                                    <!-- Amenities List for Accommodation Option 2 -->
+                                    <ul class="list-group list-group-flush mt-3">
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-bed text-theme me-2"></i>Double Bed
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-bath text-theme me-2"></i>Shower / AC / Hot Water / Wi-Fi
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-utensils text-theme me-2"></i>Breakfast, Lunch, Dinner
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-calendar-check text-theme me-2"></i>3-Days Yoga Retreat
+                                        </li>
+                                        <li class="list-group-item d-flex align-items-center">
+                                            <i class="fas fa-book text-theme me-2"></i>Yoga Equipment & Learning Materials
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Getting There Section -->
+                    <div id="getting-there-location" class="mb-5 wow fadeInUp" data-wow-delay="0.6s">
+                        <div class="p-4 bg-white rounded shadow-sm">
+                            <h2 class="text-dark mb-4 fw-bold"><span class="text-theme fw-bold">G</span>etting There</h2>
+                            <hr class="custom-underline">
+                            <p>Chopta is accessible by road from major cities like Delhi, Rishikesh, and Haridwar. The nearest railway station is Rishikesh (approx. 200 km), while the nearest airport is Jolly Grant Airport in Dehradun, around 220 km away. Regular taxis and buses are available to reach Chopta from these locations.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Footer Section -->
+    <footer class="bg-white text-dark pt-5 pb-4">
+        <div class="container text-center text-md-left">
+            <div class="row text-center text-md-left">
+                <!-- Logo and About -->
+                <div class="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <img src="images/logo.jpeg" alt="Yoga">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Yoga</h5>
+                    <p>Experience the serenity and balance of yoga with us. Discover a journey that brings inner peace and holistic wellness.</p>
+                    <div class="d-flex justify-content-center">
+                        <a class="btn hover-fill btn-theme btn-square me-2" href="https://www.instagram.com/himalayasyogaretreat/"><i class="fab fa-instagram fw-normal"></i></a>
+                        <a class="btn hover-fill btn-theme btn-square" href="https://www.threads.net/@himalayasyogaretreat/"><i class="fas fa-comments fw-normal"></i></a>
+                    </div>
+                </div>
+                <!-- Quick Links -->
+                <div class="link-animated col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Quick Links</h5>
+                    <p><a href="#" class="text-dark mb-0">Home</a></p>
+                    <p><a href="#" class="text-dark mb-0">About Us</a></p>
+                    <p><a href="#" class="text-dark mb-0">Services</a></p>
+                    <p><a href="#" class="text-dark mb-0">Team</a></p>
+                    <p><a href="#" class="text-dark mb-0">Contact Us</a></p>
+                </div>
+                <!-- Contact Info -->
+                <div class="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
+                    <h5 class="text-uppercase mb-4 font-weight-bold">Contact Info</h5>
+                    <p><i class="fas fa-map-marker-alt me-3"></i><a class="text-dark mb-0" href="https://www.google.com/maps/place/India">123 Street, India</a></p>
+                    <p><i class="fas fa-envelope me-3"></i><a class="text-dark mb-0" href="mailto:yogaretreatinhimalaya@gmail.com">yogaretreatinhimalaya@gmail.com</a></p>
+                    <p><i class="fas fa-phone me-3"></i><a class="text-dark mb-0" href="tel:+919084359144">+919084359144</a></p>
+                </div>
+            </div>
+
+            <!-- Footer Bottom -->
+            <div class="row align-items-center mt-3">
+                <div class="col-md-12 col-lg-12">
+                    <p class="text-center text-dark">
+                        &copy; 2024 <a class="text-dark border-bottom" href="/">Yoga</a>. All Rights Reserved.
+                        Designed by <a class="text-dark border-bottom" href="https://www.youtube.com/@iamsuraj_01">Jakhmola Web House</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="jquery/jquery-3.6.0.min.js"></script>
+
+    <!-- Animation JS -->
+    <script src="lib/wow/wow.min.js"></script>
+
+    <!-- Spinner JS -->
+    <script src="lib/counterup/counterup.min.js"></script>
+
+    <!-- Owl Carousel Slider JS -->
+    <script src="lib/owlcarousel/owl.carousel.min.js"></script>
+
+    <!-- Light Slider Slider JS -->
+    <script src="lib/lightslider/lightslider.js"></script>
+
+    <!-- Waypoints JS (Required for Owl Carousel and Light Slider to function properly) -->
+    <script src="lib/waypoints/waypoints.min.js"></script>
+
+    <!-- Bootstrap JS -->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+</body>
+</html>
