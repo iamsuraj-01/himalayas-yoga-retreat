@@ -1153,7 +1153,6 @@ footer .link-animated a:hover {
 
 /* Registeration */
 .registration-container {
-  padding: 60px 0;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -1333,8 +1332,5 @@ footer .link-animated a:hover {
   /* Footer */
   .footer {
     padding: 30px 0;
-  }
-  .registration-form {
-    padding: 50px;
   }
 }/*# sourceMappingURL=main.css.map */
