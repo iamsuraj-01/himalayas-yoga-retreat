@@ -2,7 +2,7 @@
 <html lang="en">
 	<head>
 		<meta charset="utf-8">
-		<title>Contact</title>
+		<title>Registeration</title>
 		<meta content="width=device-width, initial-scale=1.0" name="viewport">
 		<meta content="HTML" name="keywords">
 		<meta content="HTML" name="description">
@@ -110,76 +110,92 @@
 		<div class="container-fluid bg-theme py-5 banner" style="background: linear-gradient(rgba(9, 30, 62, 0.7), rgba(9, 30, 62, 0.7)), url('images/yogahall3.jpg') center center no-repeat;">
 			<div class="row py-5">
 				<div class="col-12 mt-lg-5 text-center">
-					<h1 class="display-4 text-white animated zoomIn">Contact</h1>
+					<h1 class="display-4 text-white animated zoomIn">Registeration</h1>
 					<a href="/" class="h5 text-white">Home</a>
 					<i class="fas fa-angle-right text-white px-2"></i>
-					<a href="contact.html" class="h5 text-white">Contact</a>
+					<a href="yoga-retreats-1.html" class="h5 text-white">Registeration</a>
 				</div>
 			</div>
 		</div>
 
-       <!-- Contact Section -->
-<div class="container-fluid py-5 contact"
-style="
-        background-image: url('images/yoga-design-(1).png'), url('images/yoga-design-(2).png'); 
-        background-size: auto, auto; 
-        background-position: top left, bottom right; 
-        background-repeat: no-repeat, no-repeat; ">
-    <div class="container py-5">
-        <div class="row g-5">
-                        <!-- Yoga Session Details -->
-                        <div class="col-lg-7 wow fadeInUp" data-wow-delay="0.3s">
-                            <div class="position-relative overflow-hidden rounded-3 shadow bg-white p-0">
-                                <img src="images/contact-details.png" alt="Yoga Session" class="img-fluid w-100" style="border-top-left-radius: 10px; border-top-right-radius: 10px;">
-                                <div class="p-4 bg-theme" style="border-bottom-left-radius: 10px; border-bottom-right-radius: 10px;">
-                                    <h3 class="text-white mb-3">Relax body & mind for visit our yoga session!!</h3>
-                                    <p class="text-white mb-1"><strong>Opening days :</strong></p>
-                                    <p class="text-white mb-0">mon - fri : 07:00am to 06:00pm</p>
-                                    <p class="text-white mb-0">sat - sun : Closed</p>
+        <!-- Registration Section -->
+         <div class="container-fluid p-5">
+            <div class="container registration-container">
+                <div class="row g-0 d-flex align-items-center justify-content-center">
+                    <!-- Left Image Section -->
+                    <div class="col-lg-5 d-none d-lg-block">
+                        <img src="images/registeration.jpg" alt="Yoga Retreat" class="form-image">
+                    </div>
+                    <!-- Right Form Section -->
+                    <div class="col-lg-7 registration-form">
+                        <h2 class="text-center mb-4">Application Form</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="fullName" class="form-label">Full Name</label>
+                                    <input type="text" class="form-control" id="fullName" required>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="gender" class="form-label">Gender</label>
+                                    <select class="form-select" id="gender" required>
+                                        <option value="">Select</option>
+                                        <option value="Male">Male</option>
+                                        <option value="Female">Female</option>
+                                        <option value="Other">Other</option>
+                                    </select>
                                 </div>
                             </div>
-                        </div>
-            <!-- Contact Information -->
-            <div class="col-lg-5 wow fadeInUp" data-wow-delay="0.1s">
-                <div class="bg-white shadow p-5 rounded-3 mb-4 d-flex align-items-center">
-                    <div class="icon-circle bg-theme text-white rounded-circle me-3">
-                        <i class="fa fa-map-marker-alt fa-2x"></i>
-                    </div>
-                    <div>
-                        <h5 class="mb-1">Location</h5>
-                        <p class="m-0">121, Rishikesh India</p>
-                    </div>
-                </div>
-                <div class="bg-white shadow p-5 rounded-3 mb-4 d-flex align-items-center">
-                    <div class="icon-circle bg-theme text-white rounded-circle me-3">
-                        <i class="fa fa-phone fa-2x"></i>
-                    </div>
-                    <div>
-                        <h5 class="mb-1">Phone</h5>
-                        <p class="m-0">(+61 3 8376 6284) <br>(+800 2345 6789)</p>
-                    </div>
-                </div>
-                <div class="bg-white shadow p-5 rounded-3 d-flex align-items-center">
-                    <div class="icon-circle bg-theme text-white rounded-circle me-3">
-                        <i class="fa fa-envelope fa-2x"></i>
-                    </div>
-                    <div>
-                        <h5 class="mb-1">Email</h5>
-                        <p class="m-0">info@yogastic.com <br> yogastic@gmail.com</p>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="contactNo" class="form-label">Contact No</label>
+                                    <input type="tel" class="form-control" id="contactNo" required>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="email" class="form-label">Email</label>
+                                    <input type="email" class="form-control" id="email" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="country" class="form-label">Your Country</label>
+                                    <input type="text" class="form-control" id="country" required>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="dob" class="form-label">Date of Birth</label>
+                                    <input type="date" class="form-control" id="dob" required>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="courseProgram" class="form-label">Course Program</label>
+                                    <select class="form-select" id="courseProgram" required>
+                                        <option value="">Choose Program</option>
+                                        <option value="3 Days Yoga Retreat">3 Days Yoga Retreat</option>
+                                        <option value="5 Days Yoga Retreat">5 Days Yoga Retreat</option>
+                                        <option value="7 Days Yoga Retreat">7 Days Yoga Retreat</option>
+                                    </select>
+                                </div>
+                                <div class="col-md-6 col-lg-6 mb-3">
+                                    <label for="accommodation" class="form-label">Accommodation</label>
+                                    <select class="form-select" id="accommodation" required>
+                                        <option value="">Choose Accommodation</option>
+                                        <option value="Private Room">Private Room</option>
+                                        <option value="Shared Room">Shared Room</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-12 mb-3">
+                                    <label for="message" class="form-label">Message</label>
+                                    <textarea class="form-control" id="message" rows="4"></textarea>
+                                </div>
+                            </div>
+                            <button type="submit" class="btn btn-theme theme-design">Submit Your Enrollment</button>
+                        </form>
                     </div>
                 </div>
             </div>
-        </div>
-    </div>
-</div>
-
-<div class="container-fluid wow slideInUp p-3" data-wow-delay="0.6s">
-  
-        <iframe class="position-relative rounded w-100 h-100"
-        src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d13803.404255444193!2d78.3293063!3d30.127075!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39093df155555557%3A0x411142a3fa089217!2sHimalayan%20Yoga%20Retreat!5e0!3m2!1sen!2sin!4v1725430541847!5m2!1sen!2sin"
-        frameborder="0" style="min-height: 450px; border:0;" allowfullscreen="" aria-hidden="false"
-        tabindex="0"></iframe>
-</div>
+         </div>
 
         
 		<!-- Footer Section -->

@@ -4,7 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: "Nunito", sans-serif;
+  font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Variables */
@@ -1151,6 +1151,46 @@ footer .link-animated a:hover {
   line-height: 1.6;
 }
 
+/* Registeration */
+.registration-container {
+  padding: 60px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.registration-container .form-image {
+  max-width: 100%;
+}
+.registration-container .registration-form {
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  background-color: #ffffff;
+  width: 100%;
+  padding: 40px;
+  max-width: 600px;
+}
+.registration-container .registration-form h2 {
+  text-align: center;
+  margin-bottom: 1.5rem;
+  color: #3391e6;
+}
+.registration-container .registration-form .form-label {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+}
+.registration-container .registration-form .form-control,
+.registration-container .registration-form .form-select {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+.registration-container .registration-form .form-control:focus,
+.registration-container .registration-form .form-select:focus {
+  outline: none;
+  border-color: #28a745;
+  box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+}
+
 /* Media Queries */
 /* Smartphone and Tablets Only */
 @media (max-width: 991.98px) {
@@ -1293,5 +1333,8 @@ footer .link-animated a:hover {
   /* Footer */
   .footer {
     padding: 30px 0;
+  }
+  .registration-form {
+    padding: 50px;
   }
 }/*# sourceMappingURL=main.css.map */

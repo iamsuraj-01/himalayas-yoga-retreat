@@ -5,7 +5,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: "Nunito", sans-serif;
+    font-family: "Nunito", "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 /* Variables */
@@ -1360,6 +1360,49 @@ footer {
     }
 }
 
+/* Registeration */
+.registration-container {
+    padding: 60px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .form-image {
+        max-width: 100%;
+    }
+
+    .registration-form {
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        background-color: #ffffff;
+        width: 100%;
+        padding: 40px;
+        max-width: 600px;
+
+        h2 {
+            text-align: center;
+            margin-bottom: 1.5rem;
+            color: $theme;
+        }
+
+        .form-label {
+            font-weight: bold;
+            margin-bottom: 0.5rem;
+        }
+
+        .form-control,
+        .form-select {
+            border-radius: 5px;
+            border: 1px solid #ddd;
+            padding: 0.75rem;
+            margin-bottom: 1rem;
+            &:focus {
+                outline: none;
+                border-color: #28a745;
+                box-shadow: 0 0 5px rgba(40, 167, 69, 0.2);
+            }
+        }
+    }
+}
 
 /* Media Queries */
 
@@ -1555,5 +1598,9 @@ footer {
     /* Footer */
     .footer {
         padding: 30px 0;
+    }
+
+    .registration-form {
+        padding: 50px;
     }
 }
