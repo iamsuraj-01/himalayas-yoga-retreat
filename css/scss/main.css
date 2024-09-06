@@ -1243,6 +1243,9 @@ footer .link-animated a:hover {
   .carousel .carousel-control-next {
     display: none;
   }
+  .responsive-yoga-design {
+    background-size: 100px 100px, 100px 100px !important;
+  }
   .about-section .col-lg-5 {
     padding: 20px;
   }
