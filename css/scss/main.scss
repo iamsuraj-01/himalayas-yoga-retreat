@@ -341,7 +341,7 @@ a {
 /* Footer */
 footer {
     img {
-        width: 80px;
+        width: 180px;
         height: auto;
         max-width: 100%;
         pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
@@ -545,40 +545,24 @@ footer {
     }
 }
 
-/* Team */
-.team-item {
-    transition: .5s;
-    padding: 30px;
+// Team Section
+.team-section {
+    .team-item {
+        transition: 0.5s;
 
-    .team-img {
-        position: relative;
-        width: 150px; /* Adjust size as needed */
-        height: 150px; /* Adjust size as needed */
-        margin: 0 auto;
-        overflow: hidden;
-        border-radius: 50%; /* Makes the image circular */
-    }
+        .team-img {
+            overflow: hidden;
 
-    &:hover .team-social {
-        background: rgba(9, 30, 62, .7);
-    }
+            img {
+                transition: 0.5s;
+                width: 100%;
+                height: auto;
+            }
 
-    &:hover .team-social a.btn {
-        opacity: 1;
-        margin-top: 0;
-        transition: .3s;
-    }
-
-    &:hover .team-social a.btn:nth-child(2) {
-        transition-delay: .05s;
-    }
-
-    &:hover .team-social a.btn:nth-child(3) {
-        transition-delay: .1s;
-    }
-
-    &:hover .team-social a.btn:nth-child(4) {
-        transition-delay: .15s;
+            &:hover img {
+                transform: scale(1.05);
+            }
+        }
     }
 }
 
@@ -1569,8 +1553,6 @@ footer {
         }
     }
 }
-
-
 
 /* Desktop Only */
 @media (min-width: 992px) {

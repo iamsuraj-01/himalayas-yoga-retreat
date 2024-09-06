@@ -305,7 +305,7 @@ a {
 
 /* Footer */
 footer img {
-  width: 80px;
+  width: 180px;
   height: auto;
   max-width: 100%;
   pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
@@ -479,35 +479,19 @@ footer .link-animated a:hover {
   box-sizing: border-box;
 }
 
-/* Team */
-.team-item {
+.team-section .team-item {
   transition: 0.5s;
-  padding: 30px;
 }
-.team-item .team-img {
-  position: relative;
-  width: 150px; /* Adjust size as needed */
-  height: 150px; /* Adjust size as needed */
-  margin: 0 auto;
+.team-section .team-item .team-img {
   overflow: hidden;
-  border-radius: 50%; /* Makes the image circular */
 }
-.team-item:hover .team-social {
-  background: rgba(9, 30, 62, 0.7);
+.team-section .team-item .team-img img {
+  transition: 0.5s;
+  width: 100%;
+  height: auto;
 }
-.team-item:hover .team-social a.btn {
-  opacity: 1;
-  margin-top: 0;
-  transition: 0.3s;
-}
-.team-item:hover .team-social a.btn:nth-child(2) {
-  transition-delay: 0.05s;
-}
-.team-item:hover .team-social a.btn:nth-child(3) {
-  transition-delay: 0.1s;
-}
-.team-item:hover .team-social a.btn:nth-child(4) {
-  transition-delay: 0.15s;
+.team-section .team-item .team-img:hover img {
+  transform: scale(1.05);
 }
 
 /* Testimonial */
