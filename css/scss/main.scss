@@ -1101,6 +1101,266 @@ footer {
     }
 }
 
+/* Location Page */
+
+/* General Styling for the Location Page */
+.rishikesh-page {
+    background-color: #FAF8F8; // Light background color for the page
+    .p-4 {
+        background-color: $white; // White background for content boxes
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Margin for spacing
+    }
+    
+    h2 {
+        color: #333; // Dark color for headings
+        font-weight: 700; // Bold font for headings
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Theme color for underline
+        margin-bottom: 20px;
+    }
+}
+
+/* Left Side Menu Styling */
+.custom-side-nav {
+    padding: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Soft shadow
+    background-color: $theme-secondary; // Main theme color background
+
+    .nav-title {
+        font-size: 1.2rem;
+        font-weight: bold;
+        margin-bottom: 15px;
+        color: $white;
+    }
+
+    .nav-list {
+        padding-left: 0;
+        margin-bottom: 20px;
+
+        .nav-item {
+            margin-bottom: 20px;
+
+            .nav-link {
+                display: flex;
+                align-items: center;
+                font-size: 1rem;
+                color: $white;
+                text-decoration: none;
+                padding: 10px 15px;
+                background-color: lighten($theme, 10%); // Lightened background for each link
+                border-radius: 5px; // Rounded corners
+                transition: background-color 0.3s ease, padding-left 0.3s ease; // Smooth transition
+
+                i {
+                    margin-right: 10px;
+                }
+
+                &:hover {
+                    background-color: darken($theme, 10%); // Darker color on hover
+                    padding-left: 20px; // Indent on hover
+                }
+            }
+        }
+    }
+
+    .btn {
+        margin-top: 20px;
+        font-weight: bold;
+        text-transform: uppercase;
+        transition: background-color 0.3s ease, color 0.3s ease;
+
+        &:hover {
+            background-color: $theme-secondary;
+            color: $white;
+        }
+    }
+}
+
+/* Introduction Section Styling */
+#introduction-location {
+    .p-4 {
+        background-color: $white; // Background color for content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    h2 {
+        color: #333; // Dark color for heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Custom theme color for underline
+        margin-bottom: 20px;
+    }
+
+    img {
+        max-width: 100%;
+        height: auto; // Responsive image
+        margin-top: 20px;
+        border-radius: 10px; // Rounded corners for image
+    }
+}
+
+/* Highlights Section Styling */
+#highlights-location {
+    .p-4 {
+        background-color: $white; // White background for content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    .highlights-list {
+        padding-left: 0; // Remove default padding from list
+        .list-group-item {
+            border: none; // Remove default border
+            padding: 15px 20px; // Custom padding for spacing
+            font-size: 16px; // Font size for better readability
+            display: flex;
+            align-items: center;
+            transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+
+            i {
+                color: $theme; // Theme color for icons
+                margin-right: 10px; // Space between icon and text
+            }
+
+            &:hover {
+                background-color: rgba($theme, 0.1); // Light theme color background on hover
+                transform: translateY(-2px); // Slight lift effect on hover
+            }
+
+            span {
+                color: #333; // Text color
+            }
+        }
+    }
+
+    img {
+        max-width: 100%; // Ensures the image is responsive
+        border-radius: 10px; // Rounded corners for the image
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Bottom margin for spacing
+    }
+}
+
+/* Activities Section Styling */
+#activities-location {
+    .p-4 {
+        background-color: $white; // Background color for content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    .list-group-item {
+        border: none; // Remove default border
+        padding: 15px 20px; // Custom padding for spacing
+        font-size: 16px; // Font size for better readability
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+
+        i {
+            color: $theme; // Theme color for icons
+            margin-right: 10px; // Space between icon and text
+        }
+
+        &:hover {
+            background-color: rgba($theme, 0.1); // Light theme color background on hover
+            transform: translateY(-2px); // Slight lift effect on hover
+        }
+    }
+
+    img {
+        max-width: 100%; // Ensures the image is responsive
+        border-radius: 10px; // Rounded corners for the image
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Bottom margin for spacing
+    }
+}
+
+/* Accommodation Section Styling */
+#accommodations-location {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Custom theme color for the underline
+        margin-bottom: 20px;
+    }
+
+    .carousel {
+        .carousel-inner {
+            .carousel-item {
+                img {
+                    border-radius: 10px; // Rounded corners for carousel images
+                    width: 100%; // Full width to fit the container
+                    height: 250px; // Fixed height for all carousel images
+                    object-fit: cover; // Ensures image covers the set height without distortion
+                }
+            }
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            background-color: rgba(0, 0, 0, 0.3); // Darker background for control icons
+            border-radius: 50%;
+        }
+    }
+
+    .list-group-item {
+        border: none; // Remove default border
+        padding: 10px 15px; // Custom padding for list items
+        font-size: 16px; // Font size for better readability
+        display: flex;
+        align-items: center;
+        transition: background-color 0.3s ease, transform 0.3s ease; // Smooth transition for hover effects
+
+        i {
+            color: $theme; // Theme color for icons
+            margin-right: 10px; // Space between icon and text
+        }
+
+        &:hover {
+            background-color: rgba($theme, 0.1); // Light theme color background on hover
+            transform: translateY(-2px); // Slight lift effect on hover
+        }
+    }
+}
+
+/* Getting There Section Styling */
+#getting-there-location {
+    .p-4 {
+        background-color: $white; // White background for content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Margin for spacing
+    }
+
+    p {
+        color: #666; // Muted text color
+        font-size: 16px; // Font size for better readability
+        line-height: 1.6; // Line height for comfortable reading
+    }
+}
+
+
 /* Media Queries */
 
 /* Smartphone and Tablets Only */
