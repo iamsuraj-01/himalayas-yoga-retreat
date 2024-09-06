@@ -341,21 +341,20 @@ a {
 /* Footer */
 footer {
     img {
-        width: 180px;
+        width: 120px;
         height: auto;
         max-width: 100%;
         pointer-events: none; /* Prevents clicking to protect logo from being downloaded */
     }
 
-    .link-animated {
-        a {
-            transition: .5s;
-            &:hover {
-                padding-left: 10px;
-            }
+    .link-animated a {
+        transition: .5s;
+        &:hover {
+            padding-left: 10px;
         }
     }
 }
+
 
 /* Landing Page Start */
 
