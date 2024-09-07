@@ -720,15 +720,16 @@ footer {
         }
     }
 
-    .btn {
+    .btn-side-nav {
         margin-top: 20px;
-        font-weight: bold;
-        text-transform: uppercase;
-        transition: background-color 0.3s ease, color 0.3s ease;
-
+        color: $dark;
+        background-color: $white;
+        border-color: $white;
+    
         &:hover {
-            background-color: $theme-secondary;
             color: $white;
+            background-color: $theme;
+            border-color: $theme;
         }
     }
 }
@@ -1150,15 +1151,16 @@ footer {
             }
         }
 
-        .btn {
+        .btn-side-nav {
             margin-top: 20px;
-            font-weight: bold;
-            text-transform: uppercase;
-            transition: background-color 0.3s ease, color 0.3s ease;
-
+            color: $dark;
+            background-color: $white;
+            border-color: $white;
+        
             &:hover {
-                background-color: $theme-secondary;
                 color: $white;
+                background-color: $theme;
+                border-color: $theme;
             }
         }
     }

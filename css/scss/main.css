@@ -632,15 +632,16 @@ footer .link-animated a:hover {
   background-color: #1978cd;
   padding-left: 20px;
 }
-.custom-side-nav .btn {
+.custom-side-nav .btn-side-nav {
   margin-top: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #212529;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
-.custom-side-nav .btn:hover {
-  background-color: #0056a8;
+.custom-side-nav .btn-side-nav:hover {
   color: #FFFFFF;
+  background-color: #3391e6;
+  border-color: #3391e6;
 }
 
 /* Right Side Menu */
@@ -984,15 +985,16 @@ footer .link-animated a:hover {
   background-color: #1978cd;
   padding-left: 20px;
 }
-.location-page .custom-side-nav .btn {
+.location-page .custom-side-nav .btn-side-nav {
   margin-top: 20px;
-  font-weight: bold;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease, color 0.3s ease;
+  color: #212529;
+  background-color: #FFFFFF;
+  border-color: #FFFFFF;
 }
-.location-page .custom-side-nav .btn:hover {
-  background-color: #0056a8;
+.location-page .custom-side-nav .btn-side-nav:hover {
   color: #FFFFFF;
+  background-color: #3391e6;
+  border-color: #3391e6;
 }
 .location-page #introduction-location .p-4 {
   background-color: #FFFFFF;
