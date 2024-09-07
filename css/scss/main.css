@@ -924,46 +924,49 @@ footer .link-animated a:hover {
 
 /* Location Page */
 /* General Styling for the Location Page */
-.rishikesh-page {
-  background-color: #FAF8F8;
+.location-page {
+  /* Left Side Menu Styling */
+  /* Introduction Section Styling */
+  /* Highlights Section Styling */
+  /* Activities Section Styling */
+  /* Accommodation Section Styling */
+  /* Getting There Section Styling */
 }
-.rishikesh-page .p-4 {
+.location-page .p-4 {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-.rishikesh-page h2 {
+.location-page h2 {
   color: #333;
   font-weight: 700;
 }
-.rishikesh-page .custom-underline {
+.location-page .custom-underline {
   width: 50px;
   height: 3px;
   background-color: #3391e6;
   margin-bottom: 20px;
 }
-
-/* Left Side Menu Styling */
-.custom-side-nav {
+.location-page .custom-side-nav {
   padding: 30px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   background-color: #0056a8;
 }
-.custom-side-nav .nav-title {
+.location-page .custom-side-nav .nav-title {
   font-size: 1.2rem;
   font-weight: bold;
   margin-bottom: 15px;
   color: #FFFFFF;
 }
-.custom-side-nav .nav-list {
+.location-page .custom-side-nav .nav-list {
   padding-left: 0;
   margin-bottom: 20px;
 }
-.custom-side-nav .nav-list .nav-item {
+.location-page .custom-side-nav .nav-list .nav-item {
   margin-bottom: 20px;
 }
-.custom-side-nav .nav-list .nav-item .nav-link {
+.location-page .custom-side-nav .nav-list .nav-item .nav-link {
   display: flex;
   align-items: center;
   font-size: 1rem;
@@ -974,56 +977,52 @@ footer .link-animated a:hover {
   border-radius: 5px;
   transition: background-color 0.3s ease, padding-left 0.3s ease;
 }
-.custom-side-nav .nav-list .nav-item .nav-link i {
+.location-page .custom-side-nav .nav-list .nav-item .nav-link i {
   margin-right: 10px;
 }
-.custom-side-nav .nav-list .nav-item .nav-link:hover {
+.location-page .custom-side-nav .nav-list .nav-item .nav-link:hover {
   background-color: #1978cd;
   padding-left: 20px;
 }
-.custom-side-nav .btn {
+.location-page .custom-side-nav .btn {
   margin-top: 20px;
   font-weight: bold;
   text-transform: uppercase;
   transition: background-color 0.3s ease, color 0.3s ease;
 }
-.custom-side-nav .btn:hover {
+.location-page .custom-side-nav .btn:hover {
   background-color: #0056a8;
   color: #FFFFFF;
 }
-
-/* Introduction Section Styling */
-#introduction-location .p-4 {
+.location-page #introduction-location .p-4 {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#introduction-location h2 {
+.location-page #introduction-location h2 {
   color: #333;
 }
-#introduction-location .custom-underline {
+.location-page #introduction-location .custom-underline {
   width: 50px;
   height: 3px;
   background-color: #3391e6;
   margin-bottom: 20px;
 }
-#introduction-location img {
+.location-page #introduction-location img {
   max-width: 100%;
   height: auto;
   margin-top: 20px;
   border-radius: 10px;
 }
-
-/* Highlights Section Styling */
-#highlights-location .p-4 {
+.location-page #highlights-location .p-4 {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#highlights-location .highlights-list {
+.location-page #highlights-location .highlights-list {
   padding-left: 0;
 }
-#highlights-location .highlights-list .list-group-item {
+.location-page #highlights-location .highlights-list .list-group-item {
   border: none;
   padding: 15px 20px;
   font-size: 16px;
@@ -1031,31 +1030,29 @@ footer .link-animated a:hover {
   align-items: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-#highlights-location .highlights-list .list-group-item i {
+.location-page #highlights-location .highlights-list .list-group-item i {
   color: #3391e6;
   margin-right: 10px;
 }
-#highlights-location .highlights-list .list-group-item:hover {
+.location-page #highlights-location .highlights-list .list-group-item:hover {
   background-color: rgba(51, 145, 230, 0.1);
   transform: translateY(-2px);
 }
-#highlights-location .highlights-list .list-group-item span {
+.location-page #highlights-location .highlights-list .list-group-item span {
   color: #333;
 }
-#highlights-location img {
+.location-page #highlights-location img {
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-
-/* Activities Section Styling */
-#activities-location .p-4 {
+.location-page #activities-location .p-4 {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#activities-location .list-group-item {
+.location-page #activities-location .list-group-item {
   border: none;
   padding: 15px 20px;
   font-size: 16px;
@@ -1063,49 +1060,47 @@ footer .link-animated a:hover {
   align-items: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-#activities-location .list-group-item i {
+.location-page #activities-location .list-group-item i {
   color: #3391e6;
   margin-right: 10px;
 }
-#activities-location .list-group-item:hover {
+.location-page #activities-location .list-group-item:hover {
   background-color: rgba(51, 145, 230, 0.1);
   transform: translateY(-2px);
 }
-#activities-location img {
+.location-page #activities-location img {
   max-width: 100%;
   border-radius: 10px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-
-/* Accommodation Section Styling */
-#accommodations-location .p-4 {
+.location-page #accommodations-location .p-4 {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
-#accommodations-location h2 {
+.location-page #accommodations-location h2 {
   color: #333;
 }
-#accommodations-location .custom-underline {
+.location-page #accommodations-location .custom-underline {
   width: 50px;
   height: 3px;
   background-color: #3391e6;
   margin-bottom: 20px;
 }
-#accommodations-location .carousel .carousel-inner .carousel-item img {
+.location-page #accommodations-location .carousel .carousel-inner .carousel-item img {
   border-radius: 10px;
   width: 100%;
   height: 250px;
   -o-object-fit: cover;
      object-fit: cover;
 }
-#accommodations-location .carousel .carousel-control-prev-icon,
-#accommodations-location .carousel .carousel-control-next-icon {
+.location-page #accommodations-location .carousel .carousel-control-prev-icon,
+.location-page #accommodations-location .carousel .carousel-control-next-icon {
   background-color: rgba(0, 0, 0, 0.3);
   border-radius: 50%;
 }
-#accommodations-location .list-group-item {
+.location-page #accommodations-location .list-group-item {
   border: none;
   padding: 10px 15px;
   font-size: 16px;
@@ -1113,23 +1108,21 @@ footer .link-animated a:hover {
   align-items: center;
   transition: background-color 0.3s ease, transform 0.3s ease;
 }
-#accommodations-location .list-group-item i {
+.location-page #accommodations-location .list-group-item i {
   color: #3391e6;
   margin-right: 10px;
 }
-#accommodations-location .list-group-item:hover {
+.location-page #accommodations-location .list-group-item:hover {
   background-color: rgba(51, 145, 230, 0.1);
   transform: translateY(-2px);
 }
-
-/* Getting There Section Styling */
-#getting-there-location .p-4 {
+.location-page #getting-there-location .p-4 {
   background-color: #FFFFFF;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
   margin-bottom: 20px;
 }
-#getting-there-location p {
+.location-page #getting-there-location p {
   color: #666;
   font-size: 16px;
   line-height: 1.6;
