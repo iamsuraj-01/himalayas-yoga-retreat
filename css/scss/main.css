@@ -1269,24 +1269,15 @@ footer .link-animated a:hover {
 }
 /* Contact Page */
 /* Contact Section Styling */
-.contact .icon-circle {
-  width: 60px;
-  height: 60px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
+.contact-info .text-theme {
+  color: #3391e6;
 }
-.contact .yoga-session .session-image {
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+.contact-info .bg-theme {
+  background-color: #3391e6;
 }
-.contact .yoga-session .session-content {
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  padding: 20px;
-}
-.contact .yoga-session .session-content h3, .contact .yoga-session .session-content p {
-  color: #FFFFFF;
+.contact-info .contact-icon {
+  width: 50px;
+  height: 50px;
 }
 
 /* Desktop Only */
