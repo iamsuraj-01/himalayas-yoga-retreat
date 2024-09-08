@@ -1532,9 +1532,6 @@ footer {
       }
 }
 
-/* Contact Page */
-
-/* Contact Section Styling */
 .contact-info {
     .text-theme {
         color: $theme;
@@ -1547,8 +1544,30 @@ footer {
     .contact-icon {
         width: 50px;
         height: 50px;
+        display: inline-flex; // Use inline-flex for better alignment with text
+        justify-content: center;
+        align-items: center;
+        margin-right: 10px; // Space between icon and text
+        border-radius: 50%; // Ensures the icon background is circular
+        flex-shrink: 0; // Prevents the icon from shrinking in flex containers
+    }
+
+    i {
+        font-size: 20px; // Adjust font size to fit properly within the circle
+    }
+
+    ul {
+        padding: 0; // Remove default padding
+        list-style: none; // Remove bullet points
+    }
+
+    li {
+        display: flex; // Use flexbox for better alignment
+        align-items: center; // Center content vertically
+        margin-bottom: 15px; // Space between list items
     }
 }
+
 
 /* Desktop Only */
 @media (min-width: 992px) {
