@@ -132,6 +132,50 @@
             $('#autoWidth').removeClass('cs-hidden');
         }
     });
+
+    // Registration Form Submission
+    $(document).ready(function() {
+        $("#registrationForm").on("submit", function(event) {
+            event.preventDefault(); // Prevent the default form submission
+
+            const fullName = $("input[name='fullName']").val();
+            const gender = $("select[name='gender']").val();
+            const contactNo = $("input[name='contactNo']").val();
+            const email = $("input[name='email']").val();
+            const country = $("input[name='country']").val();
+            const dob = $("input[name='dob']").val();
+            const courseProgram = $("select[name='courseProgram']").val();
+            const accommodation = $("select[name='accommodation']").val();
+            const message = $("textarea[name='message']").val();
+
+            // Create an array for the message lines
+            const messageLines = [
+                `Registration Information:`,
+                `Full Name: ${fullName}`,
+                `Gender: ${gender}`,
+                `Contact No: ${contactNo}`,
+                `Email: ${email}`,
+                `Country: ${country}`,
+                `Date of Birth: ${dob}`,
+                `Course Program: ${courseProgram}`,
+                `Accommodation: ${accommodation}`,
+                `Message: ${message}`
+            ];
+
+            // Join the message lines with line breaks
+            const mailMessage = messageLines.join('%0D%0A'); // '%0D%0A' is the URL-encoded line break for mailto links
+
+            // Construct mailto link
+            const mailtoLink = `mailto:vikashnawani999@gmail.com?subject=Registration Request from ${fullName}&body=${mailMessage}`;
+
+            // Open the user's default email client
+            window.location.href = mailtoLink;
+
+            // Show Thank You Modal
+            $("#thankYouModal").modal('show');
+        });
+    });
+
     
 })(jQuery);
 
