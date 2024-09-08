@@ -133,6 +133,15 @@ a {
     width: 48px;
     height: 48px;
 }
+
+.btn-outline-light {
+    border-width: 2px; // Adjust border width
+    border-style: double; // Use different border styles like dotted, dashed, etc.
+    font-weight: bolder;
+    font-size: 22px;
+    text-transform: uppercase;
+}
+
 .theme-design {
     border-radius: 20px 0 20px 0; // Curved top-right and bottom-right corners
 }
@@ -382,7 +391,7 @@ footer {
 
             .carousel-caption {
                 position: absolute;
-                top: 48%;
+                top: 47%;
                 left: 30%;
                 transform: translate(-50%, -50%);
                 text-align: left;
