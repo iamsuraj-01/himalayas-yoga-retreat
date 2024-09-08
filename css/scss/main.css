@@ -139,7 +139,7 @@ a {
   border-width: 2px;
   border-style: double;
   font-weight: bolder;
-  font-size: 22px;
+  font-size: 20px;
   text-transform: uppercase;
 }
 
@@ -419,9 +419,9 @@ footer .link-animated a:hover {
   padding: 30px;
 }
 .about-section .about-content h2 {
-  font-size: 2.5rem;
-  font-weight: 700;
-  color: #212529;
+  font-size: 1.9rem;
+  font-weight: 600;
+  text-transform: uppercase;
 }
 .about-section .about-content p {
   font-size: 1rem;
@@ -817,7 +817,6 @@ footer .link-animated a:hover {
 }
 #eligibility p {
   color: #555;
-  font-weight: 600;
   margin-bottom: 15px;
 }
 #eligibility .eligibility-list {
