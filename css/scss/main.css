@@ -724,6 +724,24 @@ footer .link-animated a:hover {
 }
 
 /* Fee Detail Section Styling */
+#food-gallery .p-4 {
+  background-color: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+}
+#food-gallery h2 {
+  color: #333;
+  font-weight: 700;
+}
+#food-gallery .custom-underline {
+  width: 50px;
+  height: 3px;
+  background-color: #3391e6;
+  margin-bottom: 20px;
+}
+
+/* Fee Detail Section Styling */
 #fee-detail .p-4 {
   background-color: #FFFFFF;
   border-radius: 10px;

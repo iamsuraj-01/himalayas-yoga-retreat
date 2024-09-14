@@ -836,6 +836,28 @@ footer {
 }
 
 /* Fee Detail Section Styling */
+#food-gallery {
+    .p-4 {
+        background-color: $white; // White background for the content box
+        border-radius: 10px; // Rounded corners
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); // Subtle shadow for depth
+        margin-bottom: 20px; // Bottom margin for spacing
+    }
+
+    h2 {
+        color: #333; // Dark color for the heading
+        font-weight: 700; // Bold font for heading
+    }
+
+    .custom-underline {
+        width: 50px;
+        height: 3px;
+        background-color: $theme; // Theme color for the underline
+        margin-bottom: 20px;
+    }
+}
+
+/* Fee Detail Section Styling */
 #fee-detail {
     .p-4 {
         background-color: $white; // White background for the content box
