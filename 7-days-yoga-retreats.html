@@ -361,93 +361,341 @@
                                 <h2 class="text-dark mb-4"><span class="text-theme fw-bold">D</span>aily Schedule</h2>
                                 <hr class="custom-underline">
                                 <p class="text-justify">Join us for a well-balanced daily schedule that includes yoga, meditation, and personal time to explore the local surroundings. Each day is structured to provide an optimal blend of physical activity, spiritual practice, and relaxation.</p>
-                                <div class="table-responsive">
-                                    <table class="table table-hover table-striped daily-schedule-table">
-                                        <thead class="table-theme">
-                                            <tr>
-                                                <th scope="col">Time</th>
-                                                <th scope="col">Activity</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <!-- Day 1 Schedule -->
-                                            <tr>
-                                                <td>07:00 am - 08:30 am</td>
-                                                <td>Morning Yoga Class</td>
-                                            </tr>
-                                            <tr>
-                                                <td>09:00 am</td>
-                                                <td>Breakfast</td>
-                                            </tr>
-                                            <tr>
-                                                <td>11:00 am</td>
-                                                <td>Opening Ceremony 🎑</td>
-                                            </tr>
-                                            <tr>
-                                                <td>01:00 pm - 02:00 pm</td>
-                                                <td>Lunch</td>
-                                            </tr>
-                                            <tr>
-                                                <td>02:00 pm - 04:00 pm</td>
-                                                <td>Rest Time</td>
-                                            </tr>
-                                            <tr>
-                                                <td>04:00 pm - 05:00 pm</td>
-                                                <td>Yoga Class</td>
-                                            </tr>
-                                            <tr>
-                                                <td>05:15 pm</td>
-                                                <td>Ganga Aarti Ceremony</td>
-                                            </tr>
-                                            <tr>
-                                                <td>07:30 pm - 08:30 pm</td>
-                                                <td>Dinner</td>
-                                            </tr>
-                                            <!-- Day 2 Schedule -->
-                                            <tr>
-                                                <td>07:00 am - 08:30 am</td>
-                                                <td>Breakfast at Retreat Centre</td>
-                                            </tr>
-                                            <tr>
-                                                <td>09:00 am</td>
-                                                <td>Meet Instructor</td>
-                                            </tr>
-                                            <tr>
-                                                <td>10:00 am</td>
-                                                <td>Transfer to Ukhimath via Devprayag and Rudraprayag</td>
-                                            </tr>
-                                            <tr>
-                                                <td>Evening</td>
-                                                <td>Arrival at Ukhimath, Check-in, Dinner, and Overnight Stay</td>
-                                            </tr>
-                                            <!-- Day 3 Schedule -->
-                                            <tr>
-                                                <td>07:00 am - 08:00 am</td>
-                                                <td>Morning Yoga Class</td>
-                                            </tr>
-                                            <tr>
-                                                <td>08:30 am</td>
-                                                <td>Breakfast</td>
-                                            </tr>
-                                            <tr>
-                                                <td>After Breakfast</td>
-                                                <td>Drive to Sari Village and Trek to Deoria Tal</td>
-                                            </tr>
-                                            <tr>
-                                                <td>06:00 pm - 07:00 pm</td>
-                                                <td>Yoga Session</td>
-                                            </tr>
-                                            <tr>
-                                                <td>07:30 pm</td>
-                                                <td>Dinner</td>
-                                            </tr>
-                                            <tr>
-                                                <td>08:30 pm</td>
-                                                <td>Lights Off</td>
-                                            </tr>
-                                        </tbody>
-                                    </table>                                    
+                                
+                                <!-- Tabs for Each Day -->
+                                <ul class="nav nav-tabs" id="scheduleTabs" role="tablist">
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link active" id="day1-tab" data-bs-toggle="tab" href="#day1" role="tab" aria-controls="day1" aria-selected="true">Day 1</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="day2-tab" data-bs-toggle="tab" href="#day2" role="tab" aria-controls="day2" aria-selected="false">Day 2</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="day3-tab" data-bs-toggle="tab" href="#day3" role="tab" aria-controls="day3" aria-selected="false">Day 3</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="day4-tab" data-bs-toggle="tab" href="#day4" role="tab" aria-controls="day4" aria-selected="false">Day 4</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="day5-tab" data-bs-toggle="tab" href="#day5" role="tab" aria-controls="day5" aria-selected="false">Day 5</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="day6-tab" data-bs-toggle="tab" href="#day6" role="tab" aria-controls="day6" aria-selected="false">Day 6</a>
+                                    </li>
+                                    <li class="nav-item" role="presentation">
+                                        <a class="nav-link" id="day7-tab" data-bs-toggle="tab" href="#day7" role="tab" aria-controls="day7" aria-selected="false">Day 7</a>
+                                    </li>
+                                </ul>
+                                
+                                <!-- Tab Content for Each Day -->
+                                <div class="tab-content" id="scheduleTabsContent">
+                                    <!-- Day 1 Content -->
+                                    <div class="tab-pane fade show active" id="day1" role="tabpanel" aria-labelledby="day1-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped daily-schedule-table">
+                                                <thead class="table-theme">
+                                                    <tr>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>05:00 am</td>
+                                                        <td>Wake Up</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06:00 am - 07:00 am</td>
+                                                        <td>Morning Class (Hatha Yoga & Pranayama)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:00 am</td>
+                                                        <td>Breakfast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:30 am</td>
+                                                        <td>Arrival at Rishikesh and Check-in</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>11:00 am</td>
+                                                        <td>Retreat Orientation</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>05:15 pm</td>
+                                                        <td>Ganga Aarti Ceremony</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:30 pm - 08:30 pm</td>
+                                                        <td>Dinner</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09:00 pm</td>
+                                                        <td>Lights Off</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                     
+                                    <!-- Day 2 Content -->
+                                    <div class="tab-pane fade" id="day2" role="tabpanel" aria-labelledby="day2-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped daily-schedule-table">
+                                                <thead class="table-theme">
+                                                    <tr>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>05:00 am</td>
+                                                        <td>Wake Up</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06:00 am - 07:30 am</td>
+                                                        <td>Morning Class (Hatha Yoga & Pranayama)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:30 am - 09:30 am</td>
+                                                        <td>Breakfast at Retreat Centre</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09:30 am</td>
+                                                        <td>Meet Instructor and Prepare for Transfer</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10:00 am</td>
+                                                        <td>Transfer to Ukhimath via Devprayag and Rudraprayag</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Evening</td>
+                                                        <td>Arrival at Ukhimath, Check-in, Dinner, Meditation, and Overnight Stay</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:30 pm - 08:30 pm</td>
+                                                        <td>Dinner</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09:00 pm</td>
+                                                        <td>Lights Off</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- Day 3 Content -->
+                                    <div class="tab-pane fade" id="day3" role="tabpanel" aria-labelledby="day3-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped daily-schedule-table">
+                                                <thead class="table-theme">
+                                                    <tr>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>05:00 am</td>
+                                                        <td>Wake Up</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06:00 am - 08:00 am</td>
+                                                        <td>Morning Class (Hatha Yoga & Pranayama) with View of Snow-Capped Himalayas</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:30 am</td>
+                                                        <td>Breakfast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>10:00 am</td>
+                                                        <td>Drive to Sari Village and Trek to Deoria Tal</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06:00 pm - 07:00 pm</td>
+                                                        <td>Meditation Class</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:30 pm</td>
+                                                        <td>Dinner</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:30 pm</td>
+                                                        <td>Lights Off</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- Day 4 Content -->
+                                    <div class="tab-pane fade" id="day4" role="tabpanel" aria-labelledby="day4-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped daily-schedule-table">
+                                                <thead class="table-theme">
+                                                    <tr>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>05:00 am</td>
+                                                        <td>Wake Up</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06:00 am - 07:00 am</td>
+                                                        <td>Morning Class (Hatha Yoga & Pranayama) in the Lap of Himalayas</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:30 am</td>
+                                                        <td>Breakfast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09:00 am</td>
+                                                        <td>Trek to Chopta (12 km) through Dense Forest and Meadows</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>01:00 pm</td>
+                                                        <td>Lunch with View of Himalayan Peaks</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>05:00 pm - 06:00 pm</td>
+                                                        <td>Meditation Class</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:00 pm</td>
+                                                        <td>Dinner</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:30 pm</td>
+                                                        <td>Lights Off</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- Day 5 Content -->
+                                    <div class="tab-pane fade" id="day5" role="tabpanel" aria-labelledby="day5-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped daily-schedule-table">
+                                                <thead class="table-theme">
+                                                    <tr>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>05:00 am</td>
+                                                        <td>Wake Up</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06:00 am - 07:00 am</td>
+                                                        <td>Morning Class (Hatha Yoga & Pranayama)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:30 am</td>
+                                                        <td>Early Breakfast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:30 am</td>
+                                                        <td>Trek to Tungnath (3 km) and Chandrashila Peak</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>Afternoon</td>
+                                                        <td>Return to Chopta and Drive to Rudraprayag</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:00 pm</td>
+                                                        <td>Dinner at Rudraprayag</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09:00 pm</td>
+                                                        <td>Lights Off</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- Day 6 Content -->
+                                    <div class="tab-pane fade" id="day6" role="tabpanel" aria-labelledby="day6-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped daily-schedule-table">
+                                                <thead class="table-theme">
+                                                    <tr>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>05:00 am</td>
+                                                        <td>Wake Up</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>06:00 am - 07:00 am</td>
+                                                        <td>Yoga Class</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:30 am</td>
+                                                        <td>Breakfast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:30 am</td>
+                                                        <td>Drive Back to Rishikesh</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:00 pm</td>
+                                                        <td>Group Dinner and Celebration at Retreat Centre</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09:00 pm</td>
+                                                        <td>Lights Off</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
+
+                                    <!-- Day 7 Content -->
+                                    <div class="tab-pane fade" id="day7" role="tabpanel" aria-labelledby="day7-tab">
+                                        <div class="table-responsive">
+                                            <table class="table table-hover table-striped daily-schedule-table">
+                                                <thead class="table-theme">
+                                                    <tr>
+                                                        <th scope="col">Time</th>
+                                                        <th scope="col">Activity</th>
+                                                    </tr>
+                                                </thead>
+                                                <tbody>
+                                                    <tr>
+                                                        <td>06:00 am</td>
+                                                        <td>Wake Up</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:00 am - 08:00 am</td>
+                                                        <td>Morning Class (Hatha Yoga & Pranayama)</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>08:30 am</td>
+                                                        <td>Breakfast</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>07:00 pm</td>
+                                                        <td>Dinner</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td>09:00 pm</td>
+                                                        <td>Lights Off</td>
+                                                    </tr>
+                                                </tbody>
+                                            </table>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -496,6 +744,9 @@
                                             <li class="list-group-item d-flex align-items-center">
                                                 <i class="fas fa-bath text-theme me-2"></i>Bathroom Amenities
                                             </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-snowflake text-theme me-2"></i> AC & Heater available on request
+                                            </li>  
                                         </ul>
                                     </div>
     
@@ -536,6 +787,9 @@
                                             <li class="list-group-item d-flex align-items-center">
                                                 <i class="fas fa-bath text-theme me-2"></i>Bathroom Amenities
                                             </li>
+                                            <li class="list-group-item d-flex align-items-center">
+                                                <i class="fas fa-snowflake text-theme me-2"></i> AC & Heater available on request
+                                            </li>  
                                         </ul>
                                     </div>
                                 </div>
