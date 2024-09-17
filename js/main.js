@@ -62,7 +62,7 @@
     // Whatsapp Button
     document.addEventListener("DOMContentLoaded", function() {
         var whatsappLink = document.getElementById("whatsapp-link");
-        var phoneNumber = "916395525749"; // Your WhatsApp number
+        var phoneNumber = "919084359144"; // Your WhatsApp number
         
         if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|IEMobile|Opera Mini/i.test(navigator.userAgent)) {
             // Mobile devices
