@@ -1,9 +1,7 @@
 Technology: Bootstrap 5, Sass, Font Awesome 5
 Extensions installed on Visual Studio Code: Live Sass Compiler (Glenn Marks) to run Sass, and Live Server (Ritwick Dey) to view output live (optional).
-
-Hosting:
-Go Daddy
+Website - https://yogaretreatinhimalaya.com/
+Hosting (Go Daddy):
 Email - vikashnawani999@gmail.com
 Password - vikash@#1234
 
-Website - https://yogaretreatinhimalaya.com/
